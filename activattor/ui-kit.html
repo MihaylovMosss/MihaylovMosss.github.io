@@ -1,0 +1,1740 @@
+
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Ui Kit2</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-4/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="ui-kit/sass/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="ui-kit/sass/main.css">
+    <link rel="stylesheet" type="text/css" href="ui-kit/sass/media.css">
+    <link rel="stylesheet" type="text/css" href="css/icons.css"/>
+    <link rel="stylesheet" type="text/css" href="css/component.css"/>
+    <link rel="stylesheet" type="text/css" href="ui-kit/sass/ion.rangeSlider.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="ui-kit/sass/ui_1.css">
+    <link rel="stylesheet" href="ui-kit/sass/slick.css">
+    <link rel="stylesheet" href="ui-kit/sass/ui_3.css">
+</head>
+<body>
+
+<div class="mp-pusher ui-kit">
+    <div class="mt-lg-5 mt-3 px-1 px-lg-3">
+        <div class="row">
+            <div class="col-lg-2 col-12">
+                <div class="form-input form-group mt-4">
+                    <input class="input-default" placeholder="Телефон" type="text">
+                    <span class="name-icon">
+                                        <svg class="icon">
+                                        <use xlink:href="#phone-icon"></use>
+                                        </svg>
+                                    </span>
+
+                </div>
+                <div class="form-input form-group">
+                    <input class="input-default error" placeholder="Телефон" type="text">
+                    <span class="name-icon">
+                        <svg class="icon">
+                            <use xlink:href="#phone-icon"></use>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <div class="col-lg-2 col-12 pt-4">
+                <a class="button button--yellow" href="#">ПОЛУЧИТЬ ПОМОЩЬ</a>
+            </div>
+            <div class="col-lg-1 col-12 mx-4 pt-5">
+                <div class="col-lg-3 col-3 position-relative">
+                    <button class="button-play">
+                        <svg class="icon">
+                            <use xlink:href="#play_icon"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-1 col-12 pt-3">
+                <button aria-label="Previous" class="slide-button-prev-default" type="button">
+                    <svg class="icon" height="18" width="11">
+                        <use xlink:href="#chevron"></use>
+                    </svg>
+                </button>
+                <button aria-label="Previous" class="slide-button-prev" type="button">
+                    <svg class="icon" height="18" width="11">
+                        <use xlink:href="#chevron"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="col-lg-1 col-12 mt-4">
+                <button class="button-heart mr-2">
+                    <svg class="icon" height="25" width="27">
+                        <use xlink:href="#heart_fill"></use>
+                    </svg>
+                </button>
+                <button class="button-balance">
+                    <svg class="icon" height="25" width="27">
+                        <use xlink:href="#balance"></use>
+                    </svg>
+                </button>
+                <br>
+                <button class="button-heart button-heart--selected mr-2">
+                    <svg class="icon" height="25" width="27">
+                        <use xlink:href="#heart_fill"></use>
+                    </svg>
+                </button>
+                <button class="button-balance button-balance--selected">
+                    <svg class="icon" height="25" width="27">
+                        <use xlink:href="#balance"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="col-lg-2 col-12 pt-4">
+                <div class="pagination pag-example">
+                    <ul>
+                        <li class="pag_prev"><a href="#">
+                            <svg class="icon" height="10" width="13">
+                                <use xlink:href="#double_chevron"></use>
+                            </svg>
+                        </a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">...</a></li>
+                        <li class="pag_next"><a href="#">
+                            <svg class="icon" height="10" width="13">
+                                <use xlink:href="#double_chevron"></use>
+                            </svg>
+                        </a></li>
+                    </ul>
+                </div>
+                <br>
+                <button aria-hidden="true" class="button-prev">
+                    <svg class="icon" height="18" width="11">
+                        <use xlink:href="#chevron"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="bg-white col-12 col-lg-2 mb-3 mx-3">
+                <a class="more" href="javascript:void(0)">Подробные характеристики</a>
+                <br>
+                <a class="more-v1" href="javascript:void(0)">зарегистрироваться</a>
+                <div class="rate_row character-rate">
+                    <ul class="star_stat">
+                        <li class="active">
+                            <svg class="icon star_stroke" height="15" width="15">
+                                <use xlink:href="#star_stroke"></use>
+                            </svg>
+                            <svg class="icon star_fill" height="15" width="15">
+                                <use xlink:href="#star_fill"></use>
+                            </svg>
+                        </li>
+                        <li class="active">
+                            <svg class="icon star_stroke" height="15" width="15">
+                                <use xlink:href="#star_stroke"></use>
+                            </svg>
+                            <svg class="icon star_fill" height="15" width="15">
+                                <use xlink:href="#star_fill"></use>
+                            </svg>
+                        </li>
+                        <li class="active">
+                            <svg class="icon star_stroke" height="15" width="15">
+                                <use xlink:href="#star_stroke"></use>
+                            </svg>
+                            <svg class="icon star_fill" height="15" width="15">
+                                <use xlink:href="#star_fill"></use>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg class="icon star_stroke" height="15" width="15">
+                                <use xlink:href="#star_stroke"></use>
+                            </svg>
+                            <svg class="icon star_fill" height="15" width="15">
+                                <use xlink:href="#star_fill"></use>
+                            </svg>
+                        </li>
+                        <li>
+                            <svg class="icon star_stroke" height="15" width="15">
+                                <use xlink:href="#star_stroke"></use>
+                            </svg>
+                            <svg class="icon star_fill" height="15" width="15">
+                                <use xlink:href="#star_fill"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+                <button class="button-bookmark">
+                    <svg class="icon bookmark_stroke" height="15" width="15">
+                        <use xlink:href="#bookmark"></use>
+                    </svg>
+                    <svg class="icon bookmark_fill" height="15" width="15">
+                        <use xlink:href="#bookmark_pressed"></use>
+                    </svg>
+                </button>
+                <button class="button-bookmark button-bookmark-active">
+                    <svg class="icon bookmark_fill" height="15" width="15">
+                        <use xlink:href="#bookmark_active"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="col-lg-3 col-12">
+                <button class="button-golden-outline">загрузить еще</button>
+                <button class="button-golden-bg">купить и вернуть 5%</button>
+            </div>
+            <div class="col-lg-2">
+                <button class="button-blue-bg">купить в кредит</button>
+                <button class="button-blue-outline">в корзину</button>
+            </div>
+            <div class="col-lg-2 d-inline-flex mb-3">
+                <div class="bg-white p-3 mr-3">
+                    <button class="button-close">
+                        <svg class="icon bookmark_fill" height="15" width="15">
+                            <use xlink:href="#close-icon"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="d-flex bg-white flex-column mr-3 p-3">
+                    <button class="button-plus mb-2" disabled>
+                        <span>+</span>
+                    </button>
+                    <button class="button-plus ">
+                        <span>+</span>
+                    </button>
+                </div>
+
+                <div class="d-flex bg-white flex-column p-3">
+                    <label class="radio_input radio_input-disabled mb-4" for="radio-disabled">
+                        <input disabled id="radio-disabled" type="radio">
+                        <span class="radio-check"></span>
+                    </label>
+                    <label class="radio_input" for="radio">
+                        <input id="radio" type="radio">
+                        <span class="radio-check"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="ui-main">
+
+
+    <!-- Modal city start -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#city-modal">
+        Модальное окно - выбрать город!
+    </button>
+    <div class="modal fade " id="city-modal" tabindex="-1" role="dialog"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="choose-city">
+                    <p>Ваш город - <span class="bold-text">Москва</span></p>
+                    <div class="choose-buttons">
+                        <button type="button" class="button-golden-bg">Да</button>
+                        <button type="button" class="button-golden-bg">выбрать другой</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal city finish -->
+
+
+    <!-- Modal auth start -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#auth-modal">
+        Модальное окно - регистрация!
+    </button>
+    <div class="modal fade" id="auth-modal" tabindex="-1" role="dialog"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="choose-city choose-city-auth">
+                    <div class="choose-buttons">
+                        <button type="button" class="button-golden-bg">Вход</button>
+                        <button type="button" class="button-golden-bg">регистрация</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal auth finish -->
+
+
+
+
+
+    <!-- Modal 1 start -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#thanks-modal">
+        Модальное окно - СПАСИБО!
+    </button>
+
+
+    <div class="modal fade custom-modal-blue" id="thanks-modal" tabindex="-1" role="dialog"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="blue-popup">
+                    <button type="button" class="close-icon" data-dismiss="modal" aria-label="Close">
+                        <svg class="icon">
+                            <use xlink:href="#close-white"></use>
+                        </svg>
+                    </button>
+                    <p class="popup-title">Спасибо!</p>
+                    <p class="popup-text">Ваша заявка принята</p>
+                    <span class="yellow-check">
+                        <svg class="icon">
+                          <use xlink:href="#check-blue"></use>
+                        </svg>
+                    </span>
+                    <div class="popup-bottom-content">
+                        <p class="popup-bottom-text bottom-text">Мы свяжемся с вами в ближайшее время и проконсультируем
+                            по возникшему вопросу
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 1 finish -->
+
+    <!-- Modal 2 start -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#subscribe-modal">
+        Модальное окно - подписка оформлена!
+    </button>
+
+
+    <div class="modal fade custom-modal-blue" id="subscribe-modal" tabindex="-1" role="dialog"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="blue-popup">
+                    <button type="button" class="close-icon" data-dismiss="modal" aria-label="Close">
+                        <svg class="icon">
+                            <use xlink:href="#close-white"></use>
+                        </svg>
+                    </button>
+                    <p class="popup-title">подписка оформлена!</p>
+                    <p class="popup-info-text">Вы будете получать новости об акциях и скидках одним из первых</p>
+                    <span class="yellow-check">
+                        <svg class="icon">
+                          <use xlink:href="#check-blue"></use>
+                        </svg>
+                    </span>
+                    <p class="popup-bottom-text">Чтобы отписаться от рассылки нажмите
+                        <a href="#">сюда</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 finish -->
+
+    <!-- Modal 3 start -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#offer-modal">
+        Модальное окно - Верните 5%
+    </button>
+
+
+    <div class="modal fade custom-modal-purple" id="offer-modal" tabindex="-1" role="dialog"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="purple-popup">
+                    <div class="purple-main">
+                        <button type="button" class="close-icon" data-dismiss="modal" aria-label="Close">
+                            <svg class="icon">
+                                <use xlink:href="#close-white"></use>
+                            </svg>
+                        </button>
+                        <p class="popup-title">Верните 5%</p>
+                        <p class="popup-text">от стоимости покупки в виде <span class="yellow-title">акусессуаров</span>
+                        </p>
+                        <p class="popup-form-title">Оставьте заявку, чтобы воспользаваться данным предложением</p>
+                        <div class="popup-inputs-content">
+                            <form action="" method="">
+                                <div class="form-top">
+                                    <div class="form-input">
+                                        <input type="text" placeholder="Имя" class="input-default">
+                                        <span class="name-icon">
+                                            <svg class="icon">
+                                                <use xlink:href="#name-icon"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="form-input">
+                                        <input type="text" placeholder="Телефон" class="input-default">
+                                        <span class="name-icon">
+                                            <svg class="icon">
+                                                <use xlink:href="#phone-icon"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="help_main-btn">
+                                    <button type="button" class="button button--yellow">оставить заявку</button>
+                                </div>
+                            </form>
+                            <div class="popup-form-bottom">
+                                <div class="checkbox_cnt">
+                                    <input id="check70" style="display: none" type="checkbox">
+                                    <label for="check70">
+                                        <span class="check_cnt check-yellow">
+                                            <svg class="icon">
+                                                <use xlink:href="#yellow-check"></use>
+                                            </svg>
+                                        </span>
+                                        <p>Нажимая на кнопку, “Получить помощь” вы даете согласие на обработку своих
+                                            персональных данных в соотвествии с
+                                            <a href="#">политикой конфиденциальности</a>
+                                        </p>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal 3 finish -->
+
+    <!-- Modal 4 start -->
+
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#buy-modal">
+        Модальное окно - Купите в кредит
+    </button>
+
+
+    <div class="modal fade custom-modal-purple" id="buy-modal" tabindex="-1" role="dialog"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="purple-popup">
+                    <div class="purple-main">
+                        <button type="button" class="close-icon" data-dismiss="modal" aria-label="Close">
+                            <svg class="icon">
+                                <use xlink:href="#close-white"></use>
+                            </svg>
+                        </button>
+                        <div class="buy-content">
+                            <div class="left-buy">
+                                <img src="img/boat-img.jpg">
+                            </div>
+                            <div class="right-buy">
+                                <p class="popup-title">Купите в кредит</p>
+                                <p class="popup-text">Гладиатор (Gladiator) E 350 под мотор красно-черная</p>
+                            </div>
+                        </div>
+                        <div class="popup-inputs-content">
+                            <form action="" method="">
+                                <div class="form-top">
+                                    <div class="form-input">
+                                        <input type="text" placeholder="Имя" class="input-default">
+                                        <span class="name-icon">
+                                <svg class="icon">
+                                    <use xlink:href="#name-icon"></use>
+                                </svg>
+                            </span>
+                                    </div>
+                                    <div class="form-input">
+                                        <input type="text" placeholder="Телефон" class="input-default">
+                                        <span class="name-icon">
+                                <svg class="icon">
+                                    <use xlink:href="#phone-icon"></use>
+                                </svg>
+                            </span>
+                                    </div>
+                                </div>
+                                <div class="help_main-btn">
+                                    <a href="javascript:void(0)"
+                                       class="button button--fill_btn button--fill_btn_yellow grid_btn">оставить заявку
+                                    </a>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="popup-form-bottom">
+                            <div class="checkbox_cnt">
+                                <input id="check60" style="display: none" type="checkbox">
+                                <label for="check60">
+                                <span class="check_cnt check-yellow">
+                                    <svg class="icon">
+                                        <use xlink:href="#yellow-check"></use>
+                                    </svg>
+                                </span>
+                                    <p>Нажимая на кнопку, “Получить помощь” вы даете согласие на обработку своих
+                                        персональных данных в соотвествии с
+                                        <a href="#">политикой конфиденциальности</a>
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal 4 finish -->
+
+    <!-- Modal 5 start -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#alfa-modal">
+        Модальное окно - КРЕДИТ ОТ АЛЬФА-БАНК
+    </button>
+
+
+    <div class="modal fade custom-modal-purple" id="alfa-modal" tabindex="-1" role="dialog"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="purple-popup">
+                    <div class="purple-main">
+                        <button type="button" class="close-icon" data-dismiss="modal" aria-label="Close">
+                            <svg class="icon">
+                                <use xlink:href="#close-white"></use>
+                            </svg>
+                        </button>
+                        <div class="popup-loan-content">
+                            <img src="img/red-a.png">
+                            <p class="popup-title popup-loan-title popup-alpha-title">кредит от АЛьфа-банк</p>
+                        </div>
+                        <p class="popup-info-text">Чтобы оформить кредит через Альфа-банк,оставьте свои данные. Мы
+                            перезвоним и
+                            проконсультурем Вас.</p>
+                        <div class="popup-inputs-content">
+                            <form action="" method="">
+                                <div class="form-top">
+                                    <div class="form-input">
+                                        <input type="text" placeholder="Имя" class="input-default">
+                                        <span class="name-icon">
+                                <svg class="icon">
+                                    <use xlink:href="#name-icon"></use>
+                                </svg>
+                            </span>
+                                    </div>
+                                    <div class="form-input">
+                                        <input type="text" placeholder="Телефон" class="input-default">
+                                        <span class="name-icon">
+                                <svg class="icon">
+                                    <use xlink:href="#phone-icon"></use>
+                                </svg>
+                            </span>
+                                    </div>
+                                </div>
+                                <div class="help_main-btn">
+                                    <button type="button" class="button button--yellow">оставить заявку
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="popup-form-bottom">
+                            <div class="checkbox_cnt">
+                                <input id="check81" style="display: none" type="checkbox">
+                                <label for="check81">
+                                <span class="check_cnt check-yellow">
+                                    <svg class="icon">
+                                        <use xlink:href="#yellow-check"></use>
+                                    </svg>
+                                </span>
+                                    <p>Нажимая на кнопку, “Получить помощь” вы даете согласие на обработку своих
+                                        персональных данных в соотвествии с
+                                        <a href="#">политикой конфиденциальности</a>
+                                    </p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5 finish -->
+
+    <!-- Modal 6 start -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#buy-click-modal">
+        Модальное окно - КУПИТЕ В 1 КЛИК
+    </button>
+
+
+    <div class="modal fade custom-modal-purple" id="buy-click-modal" tabindex="-1" role="dialog"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="purple-popup">
+                    <div class="purple-main">
+                        <button type="button" class="close-icon" data-dismiss="modal" aria-label="Close">
+                            <svg class="icon">
+                                <use xlink:href="#close-white"></use>
+                            </svg>
+                        </button>
+                        <p class="popup-title popup-loan-title">купите в 1 клик</p>
+                        <p class="popup-text">заполнив лишь форму заявки</p>
+                        <p class="popup-form-title">Оставьте заявку, чтобы воспользаваться данным предложением</p>
+                        <div class="popup-inputs-content">
+                            <form action="" method="">
+                                <div class="form-top">
+                                    <div class="form-input">
+                                        <input type="text" placeholder="Имя" class="input-default">
+                                        <span class="name-icon">
+                                <svg class="icon">
+                                    <use xlink:href="#name-icon"></use>
+                                </svg>
+                            </span>
+                                    </div>
+                                    <div class="form-input">
+                                        <input type="text" placeholder="Телефон" class="input-default">
+                                        <span class="name-icon">
+                                <svg class="icon">
+                                    <use xlink:href="#phone-icon"></use>
+                                </svg>
+                            </span>
+                                    </div>
+                                </div>
+                                <div class="help_main-btn">
+                                    <button class="button button--yellow">оставить заявку</button>
+                                </div>
+                            </form>
+                            <div class="popup-form-bottom">
+                                <div class="checkbox_cnt">
+                                    <input id="check90" style="display: none" type="checkbox">
+                                    <label for="check90">
+                                    <span class="check_cnt check-yellow">
+                                        <svg class="icon">
+                                            <use xlink:href="#yellow-check"></use>
+                                        </svg>
+                                    </span>
+                                        <p>Нажимая на кнопку, “Получить помощь” вы даете согласие на обработку своих
+                                            персональных данных в соотвествии с
+                                            <a href="#">политикой конфиденциальности</a>
+                                        </p>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6 finish -->
+
+
+    <!-- Modal items start -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#search-items-modal">
+        Модальное окно - search items
+    </button>
+
+
+    <div class="modal fade custom-modal-search" id="search-items-modal" tabindex="-1" role="dialog"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="search-popup">
+                    <div class="search-popup-top">
+                        <input type="text" placeholder="Ривьер">
+                        <button type="button" class="clear-icon">
+                            <svg class="icon">
+                                <use xlink:href="#close-icon"></use>
+                            </svg>
+                        </button>
+                        <button type="button" class="search-icon">
+                            <svg class="icon">
+                                <use xlink:href="#search-icon-popup"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="search-popup-bottom scrollbar-popup" id="scroll-popup">
+                        <div class="search-item-content">
+                            <div class="search-left">
+                                <img src="img/boat-img.jpg">
+                            </div>
+                            <div class="search-right">
+                                <p class="search-popup-title">Лодка ПВХ Ривьера 3600 СК (КОМПАКТ) надувная под мотор</p>
+                                <div class="search-popup-info">
+                                    <p class="search-popup-price">30 500 р.</p>
+                                    <div class="search-popup-feedback-cnt">
+                                        <div class="rate_row character-rate search-popup-rate">
+                                            <ul class="star_stat">
+                                                <li class="active">
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                                <li class="active">
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                                <li class="active">
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                                <li>
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                                <li>
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="search-popup-feedback">45 отзывов</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-item-content">
+                            <div class="search-left">
+                                <img src="img/boat-img.jpg">
+                            </div>
+                            <div class="search-right">
+                                <p class="search-popup-title">Лодка ПВХ Ривьера 3600 СК (КОМПАКТ) надувная под мотор</p>
+                                <div class="search-popup-info">
+                                    <p class="search-popup-price">30 500 р.</p>
+                                    <div class="search-popup-feedback-cnt">
+                                        <div class="rate_row character-rate search-popup-rate">
+                                            <ul class="star_stat">
+                                                <li class="active">
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                                <li class="active">
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                                <li class="active">
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                                <li>
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                                <li>
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="search-popup-feedback">45 отзывов</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-item-content">
+                            <div class="search-left">
+                                <img src="img/boat-img.jpg">
+                            </div>
+                            <div class="search-right">
+                                <p class="search-popup-title">Лодка ПВХ Ривьера 3600 СК (КОМПАКТ) надувная под мотор</p>
+                                <div class="search-popup-info">
+                                    <p class="search-popup-price">30 500 р.</p>
+                                    <div class="search-popup-feedback-cnt">
+                                        <div class="rate_row character-rate search-popup-rate">
+                                            <ul class="star_stat">
+                                                <li class="active">
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                                <li class="active">
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                                <li class="active">
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                                <li>
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                                <li>
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="search-popup-feedback">45 отзывов</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-item-content">
+                            <div class="search-left">
+                                <img src="img/boat-img.jpg">
+                            </div>
+                            <div class="search-right">
+                                <p class="search-popup-title">Лодка ПВХ Ривьера 3600 СК (КОМПАКТ) надувная под мотор</p>
+                                <div class="search-popup-info">
+                                    <p class="search-popup-price">30 500 р.</p>
+                                    <div class="search-popup-feedback-cnt">
+                                        <div class="rate_row character-rate search-popup-rate">
+                                            <ul class="star_stat">
+                                                <li class="active">
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                                <li class="active">
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                                <li class="active">
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                                <li>
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                                <li>
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="search-popup-feedback">45 отзывов</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-item-content">
+                            <div class="search-left">
+                                <img src="img/boat-img.jpg">
+                            </div>
+                            <div class="search-right">
+                                <p class="search-popup-title">Лодка ПВХ Ривьера 3600 СК (КОМПАКТ) надувная под мотор</p>
+                                <div class="search-popup-info">
+                                    <p class="search-popup-price">30 500 р.</p>
+                                    <div class="search-popup-feedback-cnt">
+                                        <div class="rate_row character-rate search-popup-rate">
+                                            <ul class="star_stat">
+                                                <li class="active">
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                                <li class="active">
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                                <li class="active">
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                                <li>
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                                <li>
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="search-popup-feedback">45 отзывов</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-item-content">
+                            <div class="search-left">
+                                <img src="img/boat-img.jpg">
+                            </div>
+                            <div class="search-right">
+                                <p class="search-popup-title">Лодка ПВХ Ривьера 3600 СК (КОМПАКТ) надувная под мотор</p>
+                                <div class="search-popup-info">
+                                    <p class="search-popup-price">30 500 р.</p>
+                                    <div class="search-popup-feedback-cnt">
+                                        <div class="rate_row character-rate search-popup-rate">
+                                            <ul class="star_stat">
+                                                <li class="active">
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                                <li class="active">
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                                <li class="active">
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                                <li>
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                                <li>
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="search-popup-feedback">45 отзывов</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-item-content">
+                            <div class="search-left">
+                                <img src="img/boat-img.jpg">
+                            </div>
+                            <div class="search-right">
+                                <p class="search-popup-title">Лодка ПВХ Ривьера 3600 СК (КОМПАКТ) надувная под мотор</p>
+                                <div class="search-popup-info">
+                                    <p class="search-popup-price">30 500 р.</p>
+                                    <div class="search-popup-feedback-cnt">
+                                        <div class="rate_row character-rate search-popup-rate">
+                                            <ul class="star_stat">
+                                                <li class="active">
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                                <li class="active">
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                                <li class="active">
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                                <li>
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                                <li>
+                                                    <svg class="icon star_stroke" height="15" width="15">
+                                                        <use xlink:href="#star_stroke"></use>
+                                                    </svg>
+                                                    <svg class="icon star_fill" height="15" width="15">
+                                                        <use xlink:href="#star_fill"></use>
+                                                    </svg>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="search-popup-feedback">45 отзывов</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal items finish -->
+
+
+    <!-- Modal basket popup start -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basket-popup-modal">
+        Модальное окно - подписка оформлена!
+    </button>
+
+
+    <div class="modal fade custom-modal-basket" id="basket-popup-modal" tabindex="-1" role="dialog"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="basket-popup">
+                    <div class="basket-popup-top">
+                        <div class="basket-added-desc">
+                            <p>Вы добавили в корзину:</p>
+                            <button type="button" class="close-icon" data-dismiss="modal" aria-label="Close">
+                                <svg class="icon">
+                                    <use xlink:href="#close-white"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="basket-added-info">
+                            <div class="basket-added-info-content">
+                                <div class="basket-added-left">
+                                    <img src="img/boat-popup.png">
+                                </div>
+                                <div class="basket-added-right">
+                                    <p class="basket-added-title">Гладиатор (Gladiator) E 350 под мотор
+                                        красно-черная</p>
+                                    <p class="backet-added-price">25 800 р.</p>
+                                    <div class="basket-added-buttons">
+                                        <button type="button" class="button-golden-outline">продолжить покупки</button>
+                                        <button type="button" class="button button--yellow">оформить заказ</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="button button--yellow order-btn">оформить заказ</button>
+                        </div>
+                        <div class="basket-continue">
+                            <a href="#" class="basket-continue-button">Продолжить покупки</a>
+                        </div>
+                    </div>
+                    <div class="basket-popup-bottom">
+                        <p class="basket-popup-title">Вам может пригодиться:</p>
+                        <div class="popup-slider">
+                            <div class="popup-slider-single">
+                                <div class="slider-single-main">
+                                    <img src="img/grid_el.png">
+                                    <div class="slider-top-icons">
+                                        <button type="button">
+                                            <svg class="icon" width="29" height="27">
+                                                <use xlink:href="#balance"></use>
+                                            </svg>
+                                        </button>
+                                        <button type="button">
+                                            <svg class="icon heart_stroke" width="30" height="27">
+                                                <use xlink:href="#heart_stroke"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <p class="popup-slider-title">Гладиатор (Gladiator) E 350 под мотор</p>
+                                    <div class="popup-slider-price">
+                                        <p class="slider-new-price">25 800 р.</p>
+                                        <p class="slider-old-price">35 900 р.</p>
+                                    </div>
+                                    <div class="slider-popup-btn">
+                                        <a href="#" class="button button--yellow">посмотреть</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popup-slider-single">
+                                <div class="slider-single-main">
+                                    <img src="img/grid_el.png">
+                                    <div class="slider-top-icons">
+                                        <button type="button">
+                                            <svg class="icon" width="29" height="27">
+                                                <use xlink:href="#balance"></use>
+                                            </svg>
+                                        </button>
+                                        <button type="button">
+                                            <svg class="icon heart_stroke" width="30" height="27">
+                                                <use xlink:href="#heart_stroke"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <p class="popup-slider-title">Гладиатор (Gladiator) E 350 под мотор</p>
+                                    <div class="popup-slider-price">
+                                        <p class="slider-new-price">25 800 р.</p>
+                                        <p class="slider-old-price">35 900 р.</p>
+                                    </div>
+                                    <div class="slider-popup-btn">
+                                        <a href="#" class="button button--yellow">посмотреть</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popup-slider-single">
+                                <div class="slider-single-main">
+                                    <img src="img/grid_el.png">
+                                    <div class="slider-top-icons">
+                                        <button type="button">
+                                            <svg class="icon" width="29" height="27">
+                                                <use xlink:href="#balance"></use>
+                                            </svg>
+                                        </button>
+                                        <button type="button">
+                                            <svg class="icon heart_stroke" width="30" height="27">
+                                                <use xlink:href="#heart_stroke"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <p class="popup-slider-title">Гладиатор (Gladiator) E 350 под мотор</p>
+                                    <div class="popup-slider-price">
+                                        <p class="slider-new-price">25 800 р.</p>
+                                        <p class="slider-old-price">35 900 р.</p>
+                                    </div>
+                                    <div class="slider-popup-btn">
+                                        <a href="#" class="button button--yellow">посмотреть</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popup-slider-single">
+                                <div class="slider-single-main">
+                                    <img src="img/grid_el.png">
+                                    <div class="slider-top-icons">
+                                        <button type="button">
+                                            <svg class="icon" width="29" height="27">
+                                                <use xlink:href="#balance"></use>
+                                            </svg>
+                                        </button>
+                                        <button type="button">
+                                            <svg class="icon heart_stroke" width="30" height="27">
+                                                <use xlink:href="#heart_stroke"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <p class="popup-slider-title">Гладиатор (Gladiator) E 350 под мотор</p>
+                                    <div class="popup-slider-price">
+                                        <p class="slider-new-price">25 800 р.</p>
+                                        <p class="slider-old-price">35 900 р.</p>
+                                    </div>
+                                    <div class="slider-popup-btn">
+                                        <a href="#" class="button button--yellow">посмотреть</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popup-slider-single">
+                                <div class="slider-single-main">
+                                    <img src="img/grid_el.png">
+                                    <div class="slider-top-icons">
+                                        <button type="button">
+                                            <svg class="icon" width="29" height="27">
+                                                <use xlink:href="#balance"></use>
+                                            </svg>
+                                        </button>
+                                        <button type="button">
+                                            <svg class="icon heart_stroke" width="30" height="27">
+                                                <use xlink:href="#heart_stroke"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <p class="popup-slider-title">Гладиатор (Gladiator) E 350 под мотор</p>
+                                    <div class="popup-slider-price">
+                                        <p class="slider-new-price">25 800 р.</p>
+                                        <p class="slider-old-price">35 900 р.</p>
+                                    </div>
+                                    <div class="slider-popup-btn">
+                                        <a href="#" class="button button--yellow">посмотреть</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popup-slider-single">
+                                <div class="slider-single-main">
+                                    <img src="img/grid_el.png">
+                                    <div class="slider-top-icons">
+                                        <button type="button">
+                                            <svg class="icon" width="29" height="27">
+                                                <use xlink:href="#balance"></use>
+                                            </svg>
+                                        </button>
+                                        <button type="button">
+                                            <svg class="icon heart_stroke" width="30" height="27">
+                                                <use xlink:href="#heart_stroke"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <p class="popup-slider-title">Гладиатор (Gladiator) E 350 под мотор</p>
+                                    <div class="popup-slider-price">
+                                        <p class="slider-new-price">25 800 р.</p>
+                                        <p class="slider-old-price">35 900 р.</p>
+                                    </div>
+                                    <div class="slider-popup-btn">
+                                        <a href="#" class="button button--yellow">посмотреть</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="popup-slider-single">
+                                <div class="slider-single-main">
+                                    <img src="img/grid_el.png">
+                                    <div class="slider-top-icons">
+                                        <button type="button">
+                                            <svg class="icon" width="29" height="27">
+                                                <use xlink:href="#balance"></use>
+                                            </svg>
+                                        </button>
+                                        <button type="button">
+                                            <svg class="icon heart_stroke" width="30" height="27">
+                                                <use xlink:href="#heart_stroke"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <p class="popup-slider-title">Гладиатор (Gladiator) E 350 под мотор</p>
+                                    <div class="popup-slider-price">
+                                        <p class="slider-new-price">25 800 р.</p>
+                                        <p class="slider-old-price">35 900 р.</p>
+                                    </div>
+                                    <div class="slider-popup-btn">
+                                        <a href="#" class="button button--yellow">посмотреть</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basket-popup-access">
+                            <p>все аксессуары</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal basket popup finish-->
+
+    <!-- Modal call start -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#call-modal">
+        Модальное окно - Оставьте ваши контактные данные
+    </button>
+
+
+    <div class="modal fade custom-modal-call" id="call-modal" tabindex="-1" role="dialog"
+         aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="popup_body" data-size="mid">
+                    <div class="row">
+                        <button type="button" class="close-icon" data-dismiss="modal" aria-label="Close">
+                            <svg class="icon">
+                                <use xlink:href="#close-white"></use>
+                            </svg>
+                        </button>
+                        <div class="col-lg-4 man-block">
+                            <img src="img/man_blue.png" alt="" class="consultant-img">
+                        </div>
+                        <div class="col-lg-8 man-info-block">
+                            <div class="help-right-content">
+                                <div class="mobile-help-right">
+                                    <div class="man-mobile-left">
+                                        <img src="img/circle-man-mobile.png">
+                                    </div>
+                                    <div class="man-mobile-right">
+                                        <p class="mobile-help-title">
+                                            Остались вопросы по этому товару?
+                                        </p>
+                                        <p class="mobile-help-text">
+                                            Заполните эту форму и наш эксперт проконсультирует вас по подбору
+                                        </p>
+                                    </div>
+                                </div>
+                                <p class="help-title">
+                                    <span class="upper-title">Оставьте ваши контактные данные </span>
+                                </p>
+                                <p class="help-text">Мы перезвоним и прококонсультируем вас по возникшему вопросу</p>
+                                <div class="help-form">
+                                    <form action="" method="">
+                                        <div class="form-top">
+                                            <div class="form-input">
+                                                <input type="text" placeholder="Имя">
+                                                <span class="name-icon">
+                                                <svg class="icon">
+                                                  <use xlink:href="#name-icon"></use>
+                                                </svg>
+                                            </span>
+                                            </div>
+                                            <div class="form-input">
+                                                <input type="text" placeholder="Телефон" class="input-default">
+                                                <span class="name-icon">
+                                                <svg class="icon">
+                                                <use xlink:href="#phone-icon"></use>
+                                                </svg>
+                                            </span>
+                                            </div>
+                                            <button type="button" class="button button--yellow">Получить консультацию
+                                            </button>
+                                        </div>
+                                        <div class="form-bottom">
+                                            <div class="checkbox_cnt">
+                                                <input id="check91" style="display: none" type="checkbox"
+                                                       class="input-default">
+                                                <label for="check91">
+                                                <span class="check_cnt check-yellow">
+                                                   <svg class="icon">
+                                                      <use xlink:href="#yellow-check"></use>
+                                                    </svg>
+                                                </span>
+                                                    <p>Нажимая на кнопку, “Получить помощь” вы даете согласие на
+                                                        обработку своих персональных данных в соотвествии с <a href="#"
+                                                                                                               class="politic-text">политикой
+                                                            конфиденциальности</a></p>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal call finish -->
+
+
+    <!-- Modal cities start -->
+    <button class="btn btn-primary" data-target="#cities" data-toggle="modal" type="button">
+        город
+    </button>
+    <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal " id="cities" role="dialog"
+         tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="choose-cities">
+                    <div class="choose-top">
+                        <div class="choose-cnt">
+                            <p>Выберите ваш город</p>
+                            <button class="button-close" aria-label="Close" data-dismiss="modal">
+                                <svg class="icon bookmark_fill" height="15" width="15">
+                                    <use xlink:href="#close-icon"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <input placeholder="Ваш город" type="text" id="searchCities">
+                    </div>
+                    <div class="choose-bottom">
+                        <div class="cities-listed">
+                            <ul>
+                                <li class="letter" data-letter="а">Адлер</li>
+                                <li>Алексин</li>
+                                <li>Архангельск</li>
+                                <li>Астрахань</li>
+                            </ul>
+                            <ul>
+                                <li class="letter" data-letter="б">Балашиха</li>
+                                <li>Барнаул</li>
+                                <li>Батайск</li>
+                                <li>Белгород</li>
+                                <li>Брянск</li>
+                            </ul>
+                            <ul>
+                                <li class="letter" data-letter="г">Гатчина</li>
+                            </ul>
+                            <ul>
+                                <li class="letter" data-letter="д">Дзержинск</li>
+                                <li>Дмитров</li>
+                                <li>Долгопрудный</li>
+                                <li>Домодедово</li>
+                                <li>Дубна</li>
+                            </ul>
+                            <ul>
+                                <li class="letter" data-letter="е">Екатеринбург</li>
+                            </ul>
+                            <ul>
+                                <li class="letter" data-letter="ж">Железнодорожный</li>
+                                <li>Жуковский</li>
+                            </ul>
+                            <ul>
+                                <li class="letter" data-letter="з">Зеленоград</li>
+                            </ul>
+                            <ul>
+                                <li class="letter" data-letter="и">Иваново</li>
+                                <li>Ижевск</li>
+                            </ul>
+                            <ul>
+                                <li class="letter" data-letter="Й">Йошкар-Ола</li>
+                            </ul>
+                            <ul>
+                                <li class="letter" data-letter="з">Зеленоград</li>
+                            </ul>
+                            <ul>
+                                <li class="letter" data-letter="з">Зеленоград</li>
+                                <li>lorem ipsum</li>
+                                <li>lorem ipsum</li>
+                                <li>lorem ipsum</li>
+                                <li>lorem ipsum</li>
+                                <li>lorem ipsum</li>
+                                <li>lorem ipsum</li>
+                                <li>lorem ipsum</li>
+                                <li>lorem ipsum</li>
+                            </ul>
+                            <ul>
+                                <li class="letter" data-letter="з">Зеленоград</li>
+                                <li>Lorem Ips</li>
+                                <li>Lorem Ips</li>
+                                <li>Lorem Ips</li>
+                                <li>Lorem Ips</li>
+                                <li>Lorem Ips</li>
+                                <li>Lorem Ips</li>
+                                <li>Lorem Ips</li>
+                            </ul>
+                            <ul>
+
+                                <li class="letter" data-letter="з">Зеленоград</li>
+                                <li>Lorem</li>
+                                <li>Lorem</li>
+                                <li>Lorem</li>
+                                <li>Lorem</li>
+                                <li>Lorem</li>
+                                <li>Lorem</li>
+                            </ul>
+                            <ul>
+                                <li class="letter" data-letter="з">Зеленоград</li>
+                            </ul>
+                            <ul>
+                                <li class="letter" data-letter="з">Зеленоград</li>
+                            </ul>
+                            <ul>
+                                <li class="letter" data-letter="з">Зеленоград</li>
+                            </ul>
+                            <ul>
+                                <li class="letter" data-letter="з">Зеленоград</li>
+                            </ul>
+                            <ul>
+                                <li class="letter" data-letter="з">Зеленоград</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal cities finish -->
+
+
+</div>
+<svg width="0" height="0" style="display: none">
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.8 5.5" id="arrow-long">
+        <path d="M15.8 2.8c0 .2-.2.4-.4.4H1.3L3 4.9c.2.1.2.4 0 .5-.1.1-.4.1-.5 0L.1 3c-.1-.1-.1-.4 0-.5L2.5.1c.1-.1.4-.1.5 0 .1.1.1.4 0 .5L1.3 2.4h14.1c.2 0 .4.2.4.4z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.1 23.8" id="balance">
+        <path d="M29.9 12.2L25 3l2.7-.4c.3 0 .4-.3.4-.5 0-.3-.3-.4-.5-.4L18 3.3c-.3-1.1-1.3-1.9-2.5-2.1V.4c0-.2-.2-.4-.5-.4s-.5.2-.5.4v.7c-1.6.2-2.7 1.5-2.7 3.1v.1L2.3 5.8c-.3 0-.4.3-.4.5.1.2.3.3.5.3l2.5-.4L.1 15c-.1.1-.1.2-.1.3 0 3 2.5 5.4 5.6 5.4 3.1 0 5.6-2.4 5.7-5.4 0-.2-.1-.3-.3-.4L6.2 6l5.8-.8c.4 1.1 1.3 1.9 2.5 2.1V23H9c-.3 0-.5.2-.5.4s.2.4.5.4h12c.2 0 .5-.2.5-.4s-.2-.4-.5-.4h-5.5V7.3c1.6-.2 2.7-1.5 2.7-3.1v-.1l5.5-.9-4.9 9c-.1.1 0 .3 0 .4 0 3 2.5 5.3 5.6 5.3 3.1 0 5.6-2.4 5.7-5.4 0-.1-.1-.2-.2-.3zM5.6 19.8c-2.5 0-4.5-1.8-4.7-4.1h9.4C10 18 8 19.8 5.6 19.8zm4.5-4.9H1.2l4.4-8.2 4.5 8.2zM15 6.4c-1.3 0-2.3-1-2.3-2.3 0-1.2 1-2.2 2.3-2.2s2.3 1 2.3 2.3c0 1.2-1 2.2-2.3 2.2zm9.4-2.6l4.4 8.3H20l4.4-8.3zm0 13.2c-2.5 0-4.5-1.8-4.7-4.1h9.4c-.3 2.3-2.3 4.1-4.7 4.1z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.3 10.3" id="check">
+        <path d="M4.2 8.3L.9 5.5 0 6.6l4.4 3.7L12.3.9 11.2 0l-7 8.3z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.4 18" id="chevron">
+        <path d="M9.4 18c-.3 0-.5-.1-.7-.3L0 9 8.7.3c.4-.4 1-.4 1.4 0s.4 1 0 1.4L2.8 9l7.3 7.3c.4.4.4 1 0 1.4-.2.2-.4.3-.7.3z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.9 9.3" id="double_chevron">
+        <path d="M7.2 9.3c-.1 0-.3 0-.4-.1L0 4.7 6.8.1c.4-.2.8-.1 1 .2s.1.7-.2.9L2.4 4.7l5.2 3.4c.3.2.4.6.2.9-.2.2-.4.3-.6.3z"></path>
+        <path d="M13.2 9.3c-.1 0-.3 0-.4-.1L6 4.7 12.8.1c.3-.2.7-.1.9.2.3.3.2.7-.1.9L8.4 4.7l5.2 3.4c.3.2.4.6.2.9-.2.2-.4.3-.6.3z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 27" id="heart_fill">
+        <path d="M14.4 4.8C15.6 2 18.3 0 21.4 0c4.2 0 7.2 3.6 7.6 7.9 0 0 .2 1.1-.2 3-.6 2.6-2.1 5-4 6.8L14.4 27 4.3 17.7c-1.9-1.8-3.4-4.1-4-6.8-.5-1.9-.3-3-.3-3C.4 3.6 3.4 0 7.6 0c3.1 0 5.6 2 6.8 4.8z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 25" id="heart_stroke">
+        <path d="M26.5 7.7v-.2l-.2 2.6c.2-.8.3-1.5.3-1.9-.1-.2-.1-.3-.1-.5z" fill="#fff"></path>
+        <path d="M27 7.5C26.6 3.1 23.6 0 19.7 0h-.2c-2.5 0-4.8 1.3-6.1 3.6C12.3 1.5 10.2.1 7.8 0h-.5C3.4 0 .4 3.1 0 7.5c0 .2-.2 1.2.2 2.8.6 2.4 1.9 4.5 3.7 6.2l9.6 8.5 9.6-8.5c1.9-1.7 3.2-3.8 3.7-6.2.4-1.6.3-2.6.2-2.8zM25.7 10c-.1 0-.1 0 0 0 0 .1 0 .2-.1.2-.5 2.1-1.7 4-3.4 5.6l-8.7 7.9-8.7-7.9c-1.7-1.5-2.9-3.5-3.4-5.6V10c-.4-1.5-.2-2.4-.2-2.4v-.1C1.5 3.8 4.1 1.1 7.3 1h.1c1.3 0 2.6.5 3.6 1.4 1 .9 1.3 1.2 1.6 1.7.1.1.2.3.2.4.1.1.1.3.2.4l.5 1.1.5-1c.1-.2.1-.3.2-.5.1-.1.1-.3.2-.4.3-.6.6-.9 1.6-1.7 1-.9 2.3-1.4 3.6-1.4h.1c3.3 0 5.9 2.8 6.2 6.5v.1c-.1 0 .1.9-.2 2.4z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.3 13.6" id="star_fill">
+        <path d="M7.1 0L9 4.9l5.3.2-4.1 3.3 1.4 5.1-4.4-2.9-4.4 2.9 1.4-5.1L0 5.2 5.3 5l1.8-5z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.3 13.6" id="star_stroke">
+        <path d="M7.1 1.1L8.6 5l.1.3H9l4.2.2-3.3 2.7-.2.1.1.2 1.1 4.1-3.6-2.4-.2-.1-.2.1-3.6 2.4 1.1-4.1.1-.2-.2-.1L1 5.5l4.2-.2h.3l.1-.3 1.5-3.9z"
+              fill="#fff"></path>
+        <path d="M7.1 0L9 4.9l5.2.2-4.1 3.3 1.4 5-4.4-2.9-4.4 2.9 1.4-5L0 5.2 5.3 5m5 6.7l-1-3.6.4-.3 2.5-2-3.8-.1-1.3-3.5-1.3 3.5-3.8.1 2.9 2.3-1 3.6 3.2-2.1"></path>
+    </symbol>
+</svg>
+
+
+<svg width="0" height="0" style="display: none;">
+    <symbol viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg" id="play_icon">
+        <path d="M22 14L.25 27.856V.144L22 14z" fill="#fff"></path>
+    </symbol>
+
+    <symbol viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg" id="question_icon">
+        <circle cx="8" cy="8.857" r="7.5" stroke="#6897FF"></circle>
+        <path d="M7.486 11.032a.244.244 0 0 1-.252-.252v-.48c.016-.424.124-.788.324-1.092.2-.304.492-.652.876-1.044.312-.32.54-.584.684-.792.144-.208.216-.436.216-.684 0-.368-.156-.66-.468-.876a1.796 1.796 0 0 0-1.068-.324c-.952 0-1.512.48-1.68 1.44-.04.176-.144.264-.312.264H5.23a.26.26 0 0 1-.192-.072.26.26 0 0 1-.072-.192c.016-.44.14-.844.372-1.212.24-.376.576-.676 1.008-.9.432-.224.928-.336 1.488-.336.592 0 1.088.104 1.488.312.408.2.708.464.9.792.192.32.288.664.288 1.032 0 .408-.092.76-.276 1.056-.184.296-.46.64-.828 1.032-.304.32-.532.592-.684.816-.152.216-.24.46-.264.732a7.744 7.744 0 0 0-.024.504c-.04.184-.14.276-.3.276h-.648zM7.39 13a.303.303 0 0 1-.204-.072.303.303 0 0 1-.072-.204v-.732a.26.26 0 0 1 .072-.192.278.278 0 0 1 .204-.084h.78c.08 0 .148.028.204.084a.24.24 0 0 1 .084.192v.732c0 .08-.028.148-.084.204A.303.303 0 0 1 8.17 13h-.78z"
+              fill="#6897FF"></path>
+    </symbol>
+    <symbol viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg" id="question_icon_blue">
+        <circle cx="8" cy="8.857" r="7.5" fill="#6897FF" stroke="#6897FF"></circle>
+        <path d="M7.486 11.032a.244.244 0 0 1-.252-.252v-.48c.016-.424.124-.788.324-1.092.2-.304.492-.652.876-1.044.312-.32.54-.584.684-.792.144-.208.216-.436.216-.684 0-.368-.156-.66-.468-.876a1.796 1.796 0 0 0-1.068-.324c-.952 0-1.512.48-1.68 1.44-.04.176-.144.264-.312.264H5.23a.26.26 0 0 1-.192-.072.26.26 0 0 1-.072-.192c.016-.44.14-.844.372-1.212.24-.376.576-.676 1.008-.9.432-.224.928-.336 1.488-.336.592 0 1.088.104 1.488.312.408.2.708.464.9.792.192.32.288.664.288 1.032 0 .408-.092.76-.276 1.056-.184.296-.46.64-.828 1.032-.304.32-.532.592-.684.816-.152.216-.24.46-.264.732a7.744 7.744 0 0 0-.024.504c-.04.184-.14.276-.3.276h-.648zM7.39 13a.303.303 0 0 1-.204-.072.303.303 0 0 1-.072-.204v-.732a.26.26 0 0 1 .072-.192.278.278 0 0 1 .204-.084h.78c.08 0 .148.028.204.084a.24.24 0 0 1 .084.192v.732c0 .08-.028.148-.084.204A.303.303 0 0 1 8.17 13h-.78z"
+              fill="#fff"></path>
+    </symbol>
+    <symbol viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg" id="search">
+        <circle cx="10.945" cy="10.945" r="10.445" stroke="#000"></circle>
+        <path d="M10.945 6.299v9.29m4.645-4.646H6.299m11.232 8.377l5.757 6.874" stroke="#000"
+              stroke-linecap="round"></path>
+    </symbol>
+    <symbol viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg" id="yellow_arrow_bottom">
+        <path d="M5.5 7L.737.25h9.526L5.5 7z" fill="#F9C300"></path>
+    </symbol>
+    <symbol viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg" id="arrow_top">
+        <path d="M7.08 0l6.996 10.5H.086L7.081 0z" fill="#AEC7E3"></path>
+    </symbol>
+    <symbol viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg" id="check">
+        <path d="M1 6l5 4 6-9" stroke="#008AD8" stroke-width="2" stroke-linecap="round"></path>
+    </symbol>
+    <symbol viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg" id="plus_icon">
+        <path d="M14 7.5H2m6 6v-12" stroke="#0073DC" stroke-width="2.5" stroke-linecap="round"></path>
+    </symbol>
+    <symbol viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg" id="minus_icon">
+        <path d="M14 7.5H2m6 -0v-0" stroke="#0073DC" stroke-width="2.5" stroke-linecap="round"></path>
+    </symbol>
+    <symbol viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" id="phone-icon" class="svg-phone">
+        <g clip-path="url(#clip0)" fill="#6897FF">
+            <path d="M11.066 8.672c-.287-.299-.632-.458-.999-.458-.363 0-.712.156-1.01.455l-.934.93c-.077-.041-.154-.08-.228-.118-.106-.053-.206-.103-.292-.156-.875-.556-1.67-1.28-2.432-2.216-.37-.467-.617-.86-.798-1.26.243-.22.467-.451.686-.673l.248-.251c.62-.62.62-1.424 0-2.045L4.5 2.074a12.309 12.309 0 0 1-.274-.281 13.954 13.954 0 0 0-.556-.55C3.383.96 3.04.81 2.68.81s-.709.15-1.004.434l-.006.006L.665 2.263a2.16 2.16 0 0 0-.641 1.374c-.071.862.183 1.666.378 2.192.479 1.291 1.194 2.488 2.26 3.77a13.906 13.906 0 0 0 4.63 3.626c.68.322 1.587.703 2.6.768.063.003.128.006.187.006.683 0 1.256-.245 1.705-.733.003-.006.009-.008.012-.014.153-.187.33-.355.517-.535.127-.121.257-.248.384-.381.293-.305.446-.66.446-1.023 0-.366-.156-.718-.455-1.013l-1.622-1.628zm1.058 3.111c-.003 0-.003.003 0 0-.116.124-.234.236-.36.36a7.764 7.764 0 0 0-.571.591c-.298.32-.65.47-1.111.47-.044 0-.092 0-.136-.003-.877-.056-1.693-.399-2.305-.691a13.125 13.125 0 0 1-4.36-3.416C2.271 7.88 1.598 6.757 1.152 5.551c-.274-.735-.375-1.309-.33-1.85.03-.345.162-.632.407-.877l1.008-1.008c.145-.135.298-.21.45-.21.185 0 .336.113.43.208l.01.008c.18.169.351.343.531.53l.281.286.807.807c.313.313.313.602 0 .916l-.254.254c-.249.254-.485.49-.742.72-.006.007-.012.01-.015.015-.254.255-.207.503-.154.671l.01.027c.21.508.505.987.954 1.557l.003.003c.815 1.005 1.675 1.788 2.624 2.387.12.077.245.14.363.198.106.053.207.104.292.157.012.006.024.015.036.02.1.05.195.075.292.075.246 0 .4-.154.45-.204l1.01-1.01c.1-.101.26-.223.446-.223.184 0 .334.116.426.216l.006.006 1.628 1.628c.304.302.304.612.003.925zM7.567 3.33c.774.13 1.477.496 2.038 1.057a3.767 3.767 0 0 1 1.058 2.04c.033.194.201.33.393.33.024 0 .045-.003.068-.006a.4.4 0 0 0 .328-.46 4.558 4.558 0 0 0-1.28-2.468 4.558 4.558 0 0 0-2.467-1.28.401.401 0 0 0-.46.326.395.395 0 0 0 .322.46zm6.418 2.845a7.497 7.497 0 0 0-2.107-4.063A7.497 7.497 0 0 0 7.815.005a.397.397 0 1 0-.13.786 6.713 6.713 0 0 1 3.631 1.882 6.694 6.694 0 0 1 1.882 3.632c.033.195.201.33.393.33a.391.391 0 0 0 .393-.46z"></path>
+        </g>
+        <defs>
+            <clipPath id="clip0">
+                <path fill="#fff" transform="translate(0 -.001)" d="M0 0h14v14H0z"></path>
+            </clipPath>
+        </defs>
+    </symbol>
+    <symbol viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg" id="top-grey">
+        <path d="M7.08 0l6.996 10.5H.086L7.081 0z" fill="#AEC7E3"></path>
+    </symbol>
+    <symbol viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg" id="name-icon">
+        <path d="M6.445 7.543h.099c.91-.015 1.647-.313 2.19-.885 1.197-1.258.998-3.415.976-3.62C9.632 1.491 8.85.752 8.204.407 7.722.15 7.16.01 6.532-.001H6.48c-.345 0-1.022.052-1.672.397-.652.345-1.447 1.084-1.525 2.641-.022.206-.22 2.363.976 3.621.54.572 1.276.87 2.186.885zM4.113 3.11c0-.009.003-.018.003-.023.102-2.08 1.683-2.302 2.36-2.302h.038c.838.017 2.264.336 2.36 2.302 0 .008 0 .017.004.023.003.02.22 1.992-.768 3.03-.391.411-.913.614-1.6.62h-.03c-.684-.006-1.209-.209-1.597-.62-.985-1.033-.774-3.013-.77-3.03z"
+              fill="#6897FF"></path>
+        <path d="M12.88 11.12v-.008c0-.024-.004-.047-.004-.073-.018-.574-.059-1.916-1.407-2.345l-.031-.009C10.037 8.352 8.872 7.598 8.86 7.59a.438.438 0 0 0-.584.096.375.375 0 0 0 .102.545c.053.035 1.29.838 2.836 1.209.724.24.805.962.827 1.623 0 .027 0 .05.003.073.003.26-.016.664-.066.896-.503.266-2.475 1.188-5.476 1.188-2.988 0-4.973-.925-5.48-1.191a4.656 4.656 0 0 1-.064-.896c0-.023.003-.046.003-.072.021-.662.102-1.383.826-1.624C3.334 9.066 4.57 8.26 4.623 8.228a.375.375 0 0 0 .102-.545.438.438 0 0 0-.584-.096 9.103 9.103 0 0 1-2.578 1.096l-.03.009C.183 9.123.142 10.465.124 11.036c0 .026 0 .05-.003.073v.008c-.003.151-.006.925.158 1.314a.38.38 0 0 0 .162.182C.535 12.671 2.768 14 6.505 14s5.97-1.33 6.064-1.386a.395.395 0 0 0 .161-.182c.155-.386.152-1.16.15-1.31z"
+              fill="#6897FF"></path>
+    </symbol>
+    <symbol viewBox="0 0 10 9" fill="none" xmlns="http://www.w3.org/2000/svg" id="yellow-check">
+        <path d="M1 4.15L4.52 8 9 1" stroke="#FFF73F" stroke-linecap="round"></path>
+    </symbol>
+    <symbol viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" id="search-icon-popup">
+        <circle cx="6" cy="6" r="5.5" stroke="#000"></circle>
+        <path d="M10 10l3 4" stroke="#000" stroke-linecap="round"></path>
+    </symbol>
+    <symbol viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg" id="grey-heart">
+        <mask id="a" fill="#fff">
+            <path d="M23.96 6.654C23.61 2.798 20.88 0 17.465 0c-2.275 0-4.359 1.225-5.531 3.188C10.772 1.2 8.774 0 6.534 0 3.12 0 .39 2.798.04 6.654c-.028.17-.141 1.066.204 2.528.498 2.108 1.647 4.026 3.323 5.545l8.361 7.587 8.505-7.587c1.676-1.519 2.825-3.436 3.323-5.545.345-1.461.232-2.358.204-2.528zm-1.103 2.317c-.454 1.925-1.507 3.68-3.041 5.07l-7.882 7.032-7.747-7.03C2.65 12.65 1.597 10.896 1.143 8.97.816 7.587.95 6.805.95 6.8l.007-.046c.3-3.379 2.645-5.83 5.577-5.83 2.163 0 4.068 1.328 4.971 3.468l.425 1.007.426-1.007C13.245 2.285 15.25.924 17.465.924c2.931 0 5.277 2.452 5.583 5.874 0 .007.135.79-.192 2.173z"></path>
+        </mask>
+        <path d="M23.96 6.654C23.61 2.798 20.88 0 17.465 0c-2.275 0-4.359 1.225-5.531 3.188C10.772 1.2 8.774 0 6.534 0 3.12 0 .39 2.798.04 6.654c-.028.17-.141 1.066.204 2.528.498 2.108 1.647 4.026 3.323 5.545l8.361 7.587 8.505-7.587c1.676-1.519 2.825-3.436 3.323-5.545.345-1.461.232-2.358.204-2.528zm-1.103 2.317c-.454 1.925-1.507 3.68-3.041 5.07l-7.882 7.032-7.747-7.03C2.65 12.65 1.597 10.896 1.143 8.97.816 7.587.95 6.805.95 6.8l.007-.046c.3-3.379 2.645-5.83 5.577-5.83 2.163 0 4.068 1.328 4.971 3.468l.425 1.007.426-1.007C13.245 2.285 15.25.924 17.465.924c2.931 0 5.277 2.452 5.583 5.874 0 .007.135.79-.192 2.173z"
+              fill="#fff"></path>
+        <path d="M23.96 6.654l-.996.09.004.034.005.034.987-.158zM11.934 3.188l-.864.504.854 1.461.868-1.453-.858-.512zM.04 6.654l.987.16.006-.035.003-.035-.996-.09zm.204 2.528l.973-.23-.973.23zm3.323 5.545l.672-.74v-.001l-.672.74zm8.361 7.587l-.672.741.666.605.672-.6-.666-.745zm8.505-7.587l.666.746.006-.005-.672-.74zm3.323-5.545l-.973-.23.973.23zm-.899-.211l-.973-.23.973.23zm-3.041 5.07l.665.746.006-.005-.671-.741zm-7.882 7.032l-.672.74.666.605.671-.599-.665-.746zm-7.747-7.03l.672-.74v-.001l-.672.74zM1.143 8.97l.973-.23-.973.23zM.95 6.8l-.99-.147-.004.028-.002.029.996.09zm.007-.046l.989.147.004-.03.003-.029-.996-.088zm10.548-2.362l.922-.389-.922.389zm.425 1.007l-.92.39.92 2.183.922-2.184-.922-.389zm.426-1.007l-.922-.39v.001l.921.389zm10.692 2.406l-.996.089.001.018.003.017.992-.124zm1.907-.235C24.57 2.3 21.498-1 17.466-1v2c2.797 0 5.185 2.297 5.498 5.744l1.992-.18zM17.466-1c-2.642 0-5.045 1.422-6.39 3.675L12.791 3.7c1-1.672 2.763-2.7 4.673-2.7v-2zm-4.669 3.683C11.467.408 9.151-1 6.535-1v2c1.862 0 3.542.992 4.535 2.692l1.727-1.009zM6.535-1C2.502-1-.57 2.298-.955 6.563l1.991.18C1.349 3.298 3.737 1 6.535 1v-2zM-.947 6.493c-.047.288-.16 1.317.218 2.919l1.946-.46c-.312-1.322-.199-2.085-.19-2.138l-1.974-.321zm.218 2.919c.546 2.314 1.805 4.408 3.624 6.056l1.343-1.482c-1.533-1.39-2.572-3.131-3.02-5.034l-1.947.46zm3.624 6.055l8.361 7.588 1.344-1.481-8.361-7.588-1.344 1.481zm9.699 7.594l8.505-7.588-1.332-1.492-8.505 7.587 1.332 1.493zm8.51-7.593c1.82-1.648 3.079-3.741 3.625-6.056l-1.946-.46c-.45 1.903-1.489 3.645-3.021 5.034l1.343 1.482zm3.625-6.056c.378-1.602.264-2.63.219-2.916l-1.975.316c.009.055.122.819-.19 2.14l1.946.46zm-2.845-.671c-.405 1.719-1.348 3.298-2.74 4.559l1.343 1.482c1.677-1.52 2.84-3.45 3.344-5.582l-1.947-.459zm-2.734 4.554l-7.882 7.032 1.332 1.492 7.881-7.032-1.331-1.492zm-6.544 7.037l-7.747-7.03-1.344 1.481 7.747 7.03 1.344-1.48zm-7.747-7.03c-1.395-1.264-2.337-2.843-2.743-4.562L.169 9.2c.504 2.132 1.667 4.062 3.347 5.584l1.343-1.482zM2.116 8.74a6.676 6.676 0 0 1-.192-1.391c-.006-.297.018-.412.023-.458L-.045 6.71c.004-.041-.04.237-.03.678.008.437.064 1.049.245 1.812l1.946-.46zM1.94 6.947l.007-.046-1.979-.294-.006.046 1.978.294zm.014-.105c.265-2.986 2.283-4.919 4.58-4.919v-2C2.97-.077.297 2.895-.037 6.665l1.992.177zm4.58-4.919c1.725 0 3.289 1.053 4.051 2.858l1.842-.778c-1.045-2.474-3.29-4.08-5.892-4.08v2zm4.051 2.858l.425 1.007 1.843-.777-.425-1.008-1.843.778zm2.268 1.007l.425-1.007-1.843-.778-.425 1.008 1.843.777zm.425-1.007c.74-1.753 2.392-2.857 4.188-2.857v-2c-2.634 0-4.992 1.618-6.03 4.079l1.842.778zm4.188-2.857c2.293 0 4.315 1.928 4.587 4.963l1.992-.178c-.34-3.809-3.01-6.785-6.58-6.785v2zm4.59 4.998c.005.034.007.037.012.103.005.064.011.173.008.324a6.67 6.67 0 0 1-.192 1.392l1.946.46c.18-.764.237-1.376.246-1.813a5.33 5.33 0 0 0-.014-.521c-.01-.126-.025-.224-.021-.193l-1.985.248z"
+              fill="#353535" fill-opacity=".5" mask="url(#a)"></path>
+    </symbol>
+    <symbol viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" id="close-icon">
+        <path d="M12.435 1L1 12.435m11.435.003L1 1.002" stroke-linecap="round"></path>
+    </symbol>
+    <symbol viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg" id="yellow-li">
+        <rect x="6" y="2" width="4" height="10" rx="2" fill="#F9C300"></rect>
+        <rect x="12" width="4" height="14" rx="2" fill="#F9C300"></rect>
+        <rect y="4" width="4" height="6" rx="2" fill="#F9C300"></rect>
+    </symbol>
+    <symbol viewBox="0 0 25 17" fill="none" xmlns="http://www.w3.org/2000/svg" id="check-blue">
+        <path d="M24.34 1.3C23.832-.007 22.801.2 21.683.421c-.667.139-3.636 1.008-8.333 5.96-1.949 2.056-3.234 3.694-4.08 4.944a25.98 25.98 0 0 0-1.733-1.937 25.039 25.039 0 0 0-4.136-3.28 1.902 1.902 0 0 0-1.986 3.244c.018.011 1.85 1.144 3.433 2.727 1.615 1.615 3.077 3.798 3.092 3.82a1.902 1.902 0 0 0 3.429-.596c.004-.018.759-2.102 4.743-6.303 3.21-3.384 5.35-4.46 6.09-4.759.008 0 .013-.001.023-.003-.004 0 .024-.012.068-.032a2.27 2.27 0 0 1 .2-.067c-.037.009-.056.011-.056.011l-.001-.006c.343-.15.986-.427 1-.432.967-.398 1.281-1.438.903-2.413z"
+              fill="#3298FF"></path>
+    </symbol>
+    <symbol viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" id="close-icon">
+        <path d="M12.435 1L1 12.435m11.435.003L1 1.002" stroke-linecap="round"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.1 23.8" id="balance">
+        <path d="M29.9 12.2L25 3l2.7-.4c.3 0 .4-.3.4-.5 0-.3-.3-.4-.5-.4L18 3.3c-.3-1.1-1.3-1.9-2.5-2.1V.4c0-.2-.2-.4-.5-.4s-.5.2-.5.4v.7c-1.6.2-2.7 1.5-2.7 3.1v.1L2.3 5.8c-.3 0-.4.3-.4.5.1.2.3.3.5.3l2.5-.4L.1 15c-.1.1-.1.2-.1.3 0 3 2.5 5.4 5.6 5.4 3.1 0 5.6-2.4 5.7-5.4 0-.2-.1-.3-.3-.4L6.2 6l5.8-.8c.4 1.1 1.3 1.9 2.5 2.1V23H9c-.3 0-.5.2-.5.4s.2.4.5.4h12c.2 0 .5-.2.5-.4s-.2-.4-.5-.4h-5.5V7.3c1.6-.2 2.7-1.5 2.7-3.1v-.1l5.5-.9-4.9 9c-.1.1 0 .3 0 .4 0 3 2.5 5.3 5.6 5.3 3.1 0 5.6-2.4 5.7-5.4 0-.1-.1-.2-.2-.3zM5.6 19.8c-2.5 0-4.5-1.8-4.7-4.1h9.4C10 18 8 19.8 5.6 19.8zm4.5-4.9H1.2l4.4-8.2 4.5 8.2zM15 6.4c-1.3 0-2.3-1-2.3-2.3 0-1.2 1-2.2 2.3-2.2s2.3 1 2.3 2.3c0 1.2-1 2.2-2.3 2.2zm9.4-2.6l4.4 8.3H20l4.4-8.3zm0 13.2c-2.5 0-4.5-1.8-4.7-4.1h9.4c-.3 2.3-2.3 4.1-4.7 4.1z"></path>
+    </symbol>
+    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 25" id="heart_stroke">
+        <path d="M26.5 7.7v-.2l-.2 2.6c.2-.8.3-1.5.3-1.9-.1-.2-.1-.3-.1-.5z" fill="#fff"></path>
+        <path d="M27 7.5C26.6 3.1 23.6 0 19.7 0h-.2c-2.5 0-4.8 1.3-6.1 3.6C12.3 1.5 10.2.1 7.8 0h-.5C3.4 0 .4 3.1 0 7.5c0 .2-.2 1.2.2 2.8.6 2.4 1.9 4.5 3.7 6.2l9.6 8.5 9.6-8.5c1.9-1.7 3.2-3.8 3.7-6.2.4-1.6.3-2.6.2-2.8zM25.7 10c-.1 0-.1 0 0 0 0 .1 0 .2-.1.2-.5 2.1-1.7 4-3.4 5.6l-8.7 7.9-8.7-7.9c-1.7-1.5-2.9-3.5-3.4-5.6V10c-.4-1.5-.2-2.4-.2-2.4v-.1C1.5 3.8 4.1 1.1 7.3 1h.1c1.3 0 2.6.5 3.6 1.4 1 .9 1.3 1.2 1.6 1.7.1.1.2.3.2.4.1.1.1.3.2.4l.5 1.1.5-1c.1-.2.1-.3.2-.5.1-.1.1-.3.2-.4.3-.6.6-.9 1.6-1.7 1-.9 2.3-1.4 3.6-1.4h.1c3.3 0 5.9 2.8 6.2 6.5v.1c-.1 0 .1.9-.2 2.4z"></path>
+    </symbol>
+    <symbol viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" id="close-white">
+        <path d="M13.998 2.002L2.001 13.999m11.997-.001L2.001 2.001" stroke="#fff" stroke-width="2"
+              stroke-linecap="round"></path>
+    </symbol>
+</svg>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="ui-kit/js/popper.min.js"></script>
+<script src="assets/bootstrap-4/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="assets/slick/slick.js"></script>
+<script src="js/main.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="js/classie.js"></script>
+<script src="ui-kit/js/ion.rangeSlider.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="ui-kit/js/ui.js"></script>
+
+<script>
+    $('.popup-slider .next').click(function () {
+        $(".popup-slider").slick('slickPrev');
+    });
+    $(document).ready(function () {
+        $('#searchCities').focus(function () {
+            if ($('.choose-bottom').css('display') == 'none') {
+                $('.choose-cities').css('max-height', '306px');
+                $('.choose-bottom').css('display', 'block');
+            }
+        });
+        $('#searchCities').blur(function () {
+            if ($(window).width() <= 480) {
+                if ($('.choose-bottom').css('display') == 'block') {
+                    $('.choose-cities').css('max-height', '143px');
+                    $('.choose-bottom').css('display', 'none');
+                }
+            }
+        })
+
+    })
+
+
+    $('.modal').on('shown.bs.modal', function (e) {
+        $('.popup-slider').resize();
+    });
+
+    $('.popup-slider').slick({
+        dots: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                    centerPadding: '40px'
+                }
+            },
+
+        ]
+    });
+</script>
+</body>
+</html>

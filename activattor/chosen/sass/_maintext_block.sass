@@ -1,0 +1,45 @@
+.main-text-block
+    .video-popup
+        display: flex
+        position: relative
+        border-radius: 8px
+        align-items: center
+        margin-bottom: 20px
+        justify-content: center
+        &:before
+            content: ''
+            width: 44px
+            height: 44px
+            margin: 2px
+            position: absolute
+            border-radius: 100%
+            background-color: #FFD702
+            background-repeat: no-repeat
+            background-position: 55% 50%
+            background-image: url(../img/video.svg)
+        &:hover:before
+            box-shadow: 0 0 2px rgba(255, 215, 2, 0.35)
+        img
+            width: 100%
+    .video-link
+        margin-bottom: 5px
+        +SF-UI-Display-Medium
+        border-bottom: 1px solid #F9C300
+        &:hover
+            border-bottom: 1px solid #FFD84F
+    p
+        font-size: 18px
+        line-height: 37px
+        +SF-UI-Display-Regular
+
+    .section-counts
+        margin: 60px 0px 80px
+        .section-count
+            margin-right: 60px
+            p
+                +SF-UI-Display-Light
+                padding-right: 50px
+                padding-left: 20px
+                line-height: 22px
+                margin-top: 10px
+                font-size: 17px

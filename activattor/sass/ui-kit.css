@@ -1,0 +1,19 @@
+form input {
+  background: #FFFFFF;
+  border: 1px solid #8EAFD2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+}
+
+form input[name="author"] {
+  padding: 13px 10px 13px;
+  background-image: url(../img/form_name_black.svg);
+  font-family: 'SF UI Display Regular', sans-serif;
+  background-position: 13px 13px;
+  background-repeat: no-repeat;
+  line-height: 40px;
+  color: #9F9F9F;
+  -webkit-text-fill-color: #9F9F9F;
+}
+/*# sourceMappingURL=ui-kit.css.map */

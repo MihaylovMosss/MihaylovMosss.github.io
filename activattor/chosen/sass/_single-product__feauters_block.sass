@@ -1,0 +1,41 @@
+
+.feauters-block
+    background: linear-gradient(228.27deg, #A900F8 -145.79%, #389FFF 274.83%)
+    position: relative
+    padding: 40px 0px
+    margin: 0px
+    &::before
+        content: ''
+        background-image: url(../img/feauters_block__left.png)
+        background-repeat: no-repeat
+        display: flex
+        background-size: cover
+        position: absolute
+        height: 100%
+        width: auto
+        left: 0
+        top: 0
+    &::after
+        content: ''
+        background-image: url(../img/feauters_block__right.png)
+        background-repeat: no-repeat
+        background-size: cover
+        position: absolute
+        height: 171px
+        width: 212px
+        right: 0
+        top: 0
+    .feauter-item
+        margin: 15px 0
+        svg
+            padding: 0
+            width: 72px
+            margin-right: 10px
+            path
+                fill: #FFFFFF
+        p
+            margin-bottom: 0rem
+            color: $color-white
+            font-size: 18px
+            b
+                font-family: 'SF UI Display Medium', sans-serif

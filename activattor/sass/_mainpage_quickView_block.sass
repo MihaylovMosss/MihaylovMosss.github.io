@@ -1,0 +1,153 @@
+
+.quick-view-block
+    background: linear-gradient(242.35deg, #4244E3 -4.81%, #6897FF 116.58%)
+    padding: 62px 0 68px
+    position: relative
+    overflow: hidden
+    z-index: 10
+    &:before
+        position: absolute
+        content: ''
+        height: 583px
+        width: 320px
+        left: -4%
+        top: -32%
+        background: url(../img/blue-block-Left.png) no-repeat
+        z-index: -1
+    &:after
+        position: absolute
+        content: ''
+        height: 302px
+        width: 417px
+        right: 0%
+        top: -0%
+        background: url(../img/blue-block-Right.png) no-repeat
+        z-index: -1
+    .title_section
+        z-index: 1
+        width: 100%
+        margin-bottom: 30px
+        h2
+            color: $color-white
+            +Montserrat-Regular
+            padding-bottom: 6px
+            display: inline-block
+            border-bottom: 2px solid #FFF500
+    .nav
+        width: 100%
+        margin-bottom: 40px
+        .slick-list
+            display: flex
+            .slick-track
+                display: flex
+                justify-content: space-between
+                .slick-slide
+                    text-align: center
+                    margin: 0 5px 0 5px
+                    font-size: 14px
+                    &:first-child
+                        margin-left: -15px
+                    &:last-child
+                        margin-right: -15px
+                    a
+                        border: 2px solid transparent
+                        padding: 0 18px
+                        line-height: 43px
+                        color: $color-white
+                        &:hover
+                            border: 2px solid #FFFFFF
+                            border-radius: 8px
+                    &.active a
+                        color: #000000
+                        border-radius: 8px
+                        background-color: #FFE602
+                        border: 2px solid #FFE602
+
+    .tab-content .presets-tiles
+        .presets-tile
+            margin: 0px 0px 30px
+            padding-bottom: 0
+            &-inner
+                cursor: pointer
+                border: 2px solid transparent
+                text-decoration: none
+                background: #FFFFFF
+                border-radius: 10px
+                position: relative
+                padding: 10px 15px
+                overflow: hidden
+                flex-wrap: wrap
+                display: flex
+                &:hover
+                    box-shadow: 0px 4px 4px rgba(0,0,0,.25)
+                    border: 2px solid #F9E000
+                &:hover .presets-tile-content::after
+                    opacity: 1
+                    transform: translateY(10px) translateX(0px) scale(1)
+                &:hover .presets-tile-title
+                    color: #542C4F
+                .presets-tile-image
+                    position: relative
+                    padding: 0 0px
+                    display: grid
+                    & img
+                        display: block
+                        margin: 0 auto
+                        height: 100%
+                        width: auto
+                .presets-tile-content
+                    float: left
+                    display: flex
+                    flex-wrap: wrap
+                    padding: 20px 0px 0px 20px
+                    .presets-tile-title
+                        z-index: 2
+                        height: 20px
+                        font-size: 16px
+                        line-height: 16px
+                        width: 100%
+                        color: #202020
+                        position: relative
+                        text-transform: uppercase
+                        +SF-UI-Display-Semibold
+                    .presets-tile-stitle
+                        +SF-UI-Display-Regular
+                        position: relative
+                        line-height: 16px
+                        font-size: 14px
+                        color: #646464
+                        height: 32px
+                        width: 100%
+                        z-index: 2
+                        margin-top: 0
+                    .presets-tile-counter
+                        text-align: center
+                        padding: 0 15px
+                        font-size: 11px
+                        color: #383838
+                        background: #FFD84F
+                        height: 25px
+                        line-height: 25px
+                        border-radius: 17px
+                        +SF-UI-Display-Medium
+            &-content
+                position: relative
+                &::after
+                    z-index: 5
+                    content: "Перейти"
+                    font-family: 'SF UI Display Medium', sans-serif
+                    background-image: url('../img/right_icns.svg')
+                    transform: translateY(10px) translateX(120px) scale(1)
+                    background-position: 64px 1px
+                    background-repeat: no-repeat
+                    transition: all .6s
+                    position: absolute
+                    line-height: 16px
+                    font-size: 14px
+                    color: #F9C300
+                    bottom: 30px
+                    height: 16px
+                    width: 94px
+                    opacity: 0
+                    right: 0px
+                    padding: 0

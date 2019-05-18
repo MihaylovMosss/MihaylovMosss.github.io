@@ -1,0 +1,305 @@
+
+.comments
+    list-style: none
+    padding-left: 41px
+    padding-right: 41px
+    li 
+        padding-top: 32px 
+        padding-bottom: 20px
+        border-bottom: 1px solid rgba(163, 191, 223, 0.5)
+        .comment-rating
+            margin-bottom: 5px
+            & img
+                display: block
+        .comment-author
+            color: #000000
+            font-size: 16px
+            margin-bottom: 5px
+            font-family: 'SF UI Display Regular', sans-serif
+        .comment-date
+            font-family: 'SF UI Display Regular', sans-serif
+            margin-top: 20px
+            font-size: 14px 
+            color: #9A9A9A
+        .comment-text
+            p 
+                margin-top: 0
+
+            img 
+                max-width: 250px 
+                display: inline-block 
+                vertical-align: top 
+                margin-top: 10px
+
+            img+img 
+                margin-left: 5px
+
+            .comment-reply
+                float: right
+                &-link
+                    color: #1E1E1E
+                    margin-bottom: 5px
+                    border-bottom: 1px solid #1E1E1E
+                    font-family: 'SF UI Display Regular', sans-serif
+                    &:hover
+                        color: #F9C300
+                        border-bottom: 1px solid #F9C300
+        .children
+            padding-left: 0
+            margin-top: 20px
+            li
+                list-style: none
+                border-radius: 20px
+                padding: 24px 30px 20px
+                background: linear-gradient(228.42deg, rgba(117, 180, 255, 0.15) 3.79%, rgba(117, 180, 255, 0.0975) 119%)
+
+    &:last-child 
+        border-bottom: 0
+
+    .comment-respond
+        margin-left: -41px
+        margin-right: -41px
+        .reply-rating
+            display: none
+        .reply-title
+ 
+@media (max-width: 767px) 
+    .comment-author,.comment-date 
+        display:inline-block 
+        vertical-align: middle 
+        margin-top: 0
+     
+
+    .comment-rating 
+        margin-bottom: 5px
+     
+
+    .comment-date 
+        margin-left: 5px
+     
+
+    .comments li 
+        padding: 10px 0
+     
+
+    .comments li ul li 
+        clear: both 
+        padding-left: 10px
+     
+
+    .comment-text img 
+        max-width: 150px
+     
+
+    .comments-pagination 
+        margin-top: 10px
+     
+@media (min-width: 768px) and (max-width: 991px)
+    .comment-author, .comment-date
+        display: inline-block
+        vertical-align: middle
+        margin-top: 0
+
+    .comment-rating
+        margin-bottom: 5px
+
+    .comment-date
+        margin-left: 5px
+
+    .comments li
+        padding: 10px 0
+
+.comment-respond
+    border-radius: 20px
+    padding: 22px 41px 41px
+    background: linear-gradient(253.67deg, rgba(117, 180, 255, 0.35) 3.79%, rgba(117, 180, 255, 0.2275) 119%)
+    .reply-title
+        color: #000000
+        font-size: 20px
+        text-align: left
+        position: relative
+        margin-bottom: 18px
+        font-family: 'SF UI Display Regular', sans-serif
+
+        small
+            display: inline-block
+            position: absolute
+            height: 17px
+            width: 17px
+
+            right: 0px
+            top: 6px
+            #cancel-comment-reply-link
+                position: relative
+                height: 17px
+                width: 17px
+                &::before
+                    content: ''
+                    position: absolute
+                    border-top: 1px solid #3B6B9E
+                    transform: rotate(45deg)
+                    height: 17px
+                    width: 17px
+                    left: -6px
+                    top: 5px
+                &::after
+                    content: ''
+                    position: absolute
+                    border-top: 1px solid #3B6B9E
+                    transform: rotate(135deg)
+                    height: 17px
+                    width: 17px
+                    left: -6px
+                    top: -6px
+                &:hover::before, &:hover::after
+                    border-color: #F9C300
+
+    .reply-rating
+        border: none
+        text-align: center
+
+        &-stars
+            width: 100%
+            display: flex
+            flex-direction: row-reverse
+            justify-content: space-around
+
+            input
+                display: none
+
+            label:before
+                margin: 5px
+                font-family: FontAwesome
+                display: block
+                content: "\f005"
+                font-size: 40px
+                text-shadow: 1px 1px 1px #D3DBE1
+
+            label
+                color: #EAEAEA
+                float: right
+                cursor: pointer
+                width: 50px
+
+            span
+                font-size: 12px
+                color: #C4BCC7
+                display: block
+
+            &>input:checked~label:before,
+            &:not(:checked)>label:hover:before,
+            &:not(:checked)>label:hover~label:before
+                color: #FFCD03
+                text-shadow: 0px 2px 2px #B8960F
+
+            &>input:checked+label:hover:before,
+            &>input:checked~label:hover:before,
+            &>label:hover~input:checked~label:before,
+            &>input:checked~label:hover~label:before
+                color: #FFCD03
+                text-shadow: 0px 2px 2px #B8960F
+
+    .reply-text
+        margin-top: 20px
+        margin-bottom: 20px
+
+        textarea
+            font-family: 'SF UI Display Regular', sans-serif
+            background: #FFFFFF
+            border: 1px solid #8EAFD2
+            box-sizing: border-box
+            border-radius: 8px
+            padding: 12px 18px
+            color: #9F9F9F
+            display: block
+            width: 100%
+            height: 124px
+            font-size: 14px
+            line-height: 20px
+
+    .reply-inputs
+        &:after
+            content: ""
+            display: block
+            clear: both
+
+        .reply-input
+            width: 100%
+            float: left
+            margin-bottom: 20px
+
+            input
+                font-family: 'SF UI Display Regular', sans-serif
+                border: 1px solid #8EAFD2
+                background: #FFFFFF
+                padding: 11px 10px
+                border-radius: 8px
+                line-height: 14px
+                color: #9F9F9F
+                -webkit-text-fill-color: #9F9F9F
+                width: 100%
+
+                &[name='author']
+                    background-image: url(../img/form_name_black.svg)
+                    background-position: 10px 12px
+                    background-repeat: no-repeat
+                    padding-left: 33px
+
+                &[name='email']
+                    padding-left: 33px
+
+    .reply-description
+        font-family: 'SF UI Display Regular', sans-serif
+        line-height: 17px
+        font-size: 12px
+        color: #838383
+        p
+            margin-bottom: 0%
+    
+    .form-submit
+        margin-top: 28px
+        input
+            background: #FFE03F
+            border: 1px solid #FFE03F
+            text-transform: uppercase
+            font-family: 'SF UI Display Bold', sans-serif
+            letter-spacing: 0.03em
+            border-radius: 8px
+            box-shadow: 0 0
+            font-size: 13px
+            color: #212121
+            width: 100%
+
+    .reply
+        margin-top: 40px
+
+.comments-pagination 
+    margin: 40px 0
+    justify-content: center
+    div.new-comment, .load-more
+        margin: 0 9px
+
+
+@media (max-width: 767px)
+    .comment-respond
+        box-shadow: none
+        border-radius: 0
+        padding: 10px
+        margin: 0 -10px
+
+    .nsp-tab-reviews
+        padding-bottom: 0
+
+    .reply-inputs
+        margin: 10px -10px
+
+    .reply-input
+        padding: 0 10px
+
+    .reply-text
+        margin-top: 10px
+        margin-bottom: 10px
+
+@media (min-width: 1440px)
+    .comment-text
+        margin-left: 40px

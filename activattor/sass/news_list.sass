@@ -1,0 +1,193 @@
+@import 'fonts'
+$color-white: #FFFFFF
+@import 'bx-breadcrumb'
+.news-block
+    position: relative
+    padding: 0px 0 61px
+    .container
+        padding: 0
+        display: flex
+        flex-wrap: wrap
+        align-items: flex-start
+        h1
+            text-transform: uppercase
+            margin-bottom: 46px
+            width: 100%
+    &-list
+        padding: 0 30px 0 0
+        flex-wrap: wrap
+        margin: 0 0px 0
+        display: flex
+        .news-item
+            margin-bottom: 30px
+            &-content
+                position: relative
+                border-radius: 12px
+                background: #ffffff
+                border: 2px solid rgba(226, 226, 226, 0.5)
+                &:hover
+                    border: 2px solid #FFE03F
+                a
+                    display: block
+                    img
+                        width: 100%
+                        height: auto
+                &-title
+                    padding: 27px 33px 0
+                    .date
+                        color: #202020
+                        font-size: 12px
+                        margin-bottom: 16px
+                        +SF-UI-Display-Regular
+                        span:last-child
+                            margin-left: 20px
+                    a
+                        color: #000000
+                        font-size: 16px
+                        line-height: 17px
+                        margin-bottom: 15px
+                .inform
+                    padding: 0 33px 27px
+                    p
+                        color: #202020
+                        font-size: 14px
+                        line-height: 19px
+                        +SF-UI-Display-Regular
+                &-action-block
+                    justify-content: space-between
+                    align-items: center
+                    display: flex
+                    width: 100%
+                    .item
+                        display: flex
+                        flex-wrap: wrap
+                        margin-right: 30px
+                        align-items: center
+                        img
+                            margin-right: 5px
+                        span
+                            +SF-UI-Display-Regular
+                            font-size: 10px
+                            color: #202020
+    &__category_block
+        background: #557AFF
+        border-radius: 12px
+        position: relative
+        overflow: hidden
+        padding: 20px 3%
+        flex-wrap: wrap
+        display: flex
+        z-index: 1
+        &::after
+            background: url(../img/news-category__block.png) no-repeat
+            position: absolute
+            content: ""
+            bottom: 0
+            right: 0
+            height: 261px
+            width: 328px
+            z-index: -1
+        ul
+            list-style: none
+            padding-left: 0
+            width: 100%
+            li
+                border-bottom: 0.75px solid rgba(255, 255, 255, 0.5)
+
+                a
+                    font-family: 'SF UI Display Regular', sans-serif
+                    font-size: 18px
+                    display: block
+                    margin: 12px 0
+                    color: #FFFFFF
+                &.active, &:hover
+                    a
+                        font-family: 'SF UI Display Medium', sans-serif
+                        transition: all 1s
+                        position: relative
+                        color: #FFED4F
+                        &::after
+                            background-image: url(../img/news_cat_active.svg)
+                            background-size: cover
+                            position: absolute
+                            height: 14px
+                            width: 16px
+                            content: ""
+                            right: 0
+                            top: 8px
+
+@media (max-width: 1200px)
+    .news-block
+        .container h1
+            text-transform: none
+            margin-bottom: 26px
+        &-list
+            order: 2
+            padding: 0
+            margin-top: 40px
+            flex: 0 0 100%
+            max-width: 100%
+            .news-item
+                flex: 0 0 50%
+                max-width: 50%
+                &-content
+                    display: flex
+                    flex-wrap: wrap
+                    padding: 16px 12px
+                    border-radius: 10px
+                    background: rgba(245, 245, 245, 0.9)
+                    border: 2px solid rgba(119, 119, 119, 0.05)
+                    .img
+                        display: flex
+                        flex: 0 0 20%
+                        max-width: 20%
+                        img
+                            height: 100%
+                            border-radius: 10px
+                    &-title
+                        flex: 0 0 80%
+                        max-width: 80%
+                        padding: 0 13px
+                        a
+                            margin-bottom: 0
+                    .inform
+                        margin-top: 15px
+                        padding: 0 0px
+                        .news-item-content-action-block
+                            justify-content: left
+        &__category_block
+            order: 1
+            flex: 0 0 100%
+            max-width: 100%
+
+@media (max-width: 768px)
+    .news-block
+        &-list
+            .news-item
+                &-content
+                    .img
+                        flex: 0 0 30%
+                        max-width: 30%
+                    &-title
+                        flex: 0 0 70%
+                        max-width: 70%
+
+@media (max-width: 640px)
+    .news-block
+        .container
+            padding-left: 15px
+            padding-right: 15px
+            h1
+                font-size: 24px
+                margin-bottom: 21px
+        &-list
+            .news-item
+                flex: 0 0 100%
+                max-width: 100%
+                &-content
+                    .img
+                        flex: 0 0 20%
+                        max-width: 20%
+                    &-title
+                        flex: 0 0 80%
+                        max-width: 80%

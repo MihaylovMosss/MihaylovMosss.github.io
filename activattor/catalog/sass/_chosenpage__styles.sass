@@ -1,0 +1,2428 @@
+.breadcrumbs
+  width: 100%
+  list-style-type: none
+  padding: 0
+  margin: 0
+  height: 52px
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  border-bottom: 1px solid #C8D3DF
+
+  li
+    position: relative
+    padding-right: 40px
+    @media all and (max-width: 1060px)
+      &:last-child
+        padding-right: 0
+      &:first-child
+        padding-right: 0
+      &:first-child::after
+        display: none
+      &:first-child span
+        text-indent: -100000px
+
+    &::after
+      content: "/"
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      color: #9EACBB
+      font-size: 15px
+      line-height: 18px
+      right: 17px
+
+    &:last-child:after
+      content: ""
+
+    a
+      display: flex
+      align-items: center
+
+    svg
+      fill: #9EACBB
+
+    span
+      padding-left: 7px
+      font-family: $ui
+      font-size: 15px
+      line-height: 18px
+      color: #9EACBB
+
+.chosen_section_title
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  height: 142px
+
+  h2
+    color: #000
+    font-size: 33px
+    line-height: 40px
+    letter-spacing: -0.02em
+    @media all and (max-width: 1060px)
+      font-size: 29px
+
+  span
+    display: flex
+    align-items: center
+    padding: 0 15px
+    border-radius: 22px
+    height: 41px
+    line-height: 21px
+    font-size: 18px
+    color: #1D1D1D
+    background: rgba(124, 196, 252, 0.2)
+
+.element_grid
+  width: calc(100% + 30px)
+  padding-bottom: 18px
+  @media all and (max-width: 1440px)
+    .col-lg-3
+      -ms-flex: 0 0 33.333333%
+      flex: 0 0 33.333333%
+      max-width: 33.333333%
+  @media all and (max-width: 1060px)
+    .col-lg-3
+      -ms-flex: 0 0 50%
+      flex: 0 0 50%
+      max-width: 50%
+
+  .element_grid__el
+    overflow: hidden
+    margin-bottom: 40px
+    border-radius: 10px
+    border: 1px solid #95AAC2
+    background-color: #fff
+
+    .element_grid__slider
+      height: 100%
+      display: flex
+      align-items: center
+      justify-content: center
+
+      .carousel-inner
+        height: 100%
+        padding-top: 20px
+
+      .element_grid__slider_el
+        height: 100%
+
+        .slider_image
+          width: 100%
+          height: 100%
+          display: flex
+          align-content: center
+          justify-content: center
+
+        img
+          height: 100%
+          width: auto !important
+
+
+    .prod_preview
+      width: 100%
+      height: 287px
+      position: relative
+      padding-bottom: 40px
+      box-sizing: border-box
+
+      .we_have
+        position: absolute
+        bottom: 0
+        left: 17px
+        height: 22px
+        border-radius: 11px
+        padding: 0 6px 0 8px
+        background-color: rgba(55, 69, 97, 0.05)
+        display: flex
+        align-items: center
+
+        svg
+          fill: #F9C300
+
+        & > span
+          display: block
+          padding-left: 3px
+          color: #6E6E6E
+          font-size: 14px
+          line-height: 18px
+
+          span
+            color: #000000
+
+      .carousel-control-prev
+        opacity: 1
+
+        .slider_control_prev
+          height: 43px
+          width: 23px
+          border-radius: 9px
+          display: flex
+          align-items: center
+          justify-content: center
+          padding-right: 1px
+          background-color: rgba(53, 53, 53, 0.25)
+          margin-top: 127px
+          @media all and (max-width: 1060px)
+            width: 27px
+            height: 52px
+            border-radius: 14px
+
+          svg
+            fill: white
+
+        &:hover .slider_control_prev
+          background-color: #F9C300
+
+        &:active .slider_control_prev
+          background-color: #FCDD6E
+
+      .carousel-control-next
+        opacity: 1
+
+        .slider_control_next
+          height: 43px
+          width: 23px
+          border-radius: 9px
+          display: flex
+          align-items: center
+          justify-content: center
+          padding-left: 2px
+          background-color: rgba(53, 53, 53, 0.25)
+          margin-top: 127px
+          transition: all .3s ease-in-out
+
+          @media all and (max-width: 1060px)
+            width: 27px
+            height: 52px
+            border-radius: 14px
+
+          svg
+            fill: white
+
+        &:hover .slider_control_next
+          background-color: #F9C300
+
+        &:active .slider_control_next
+          background-color: #FCDD6E
+
+      .percent
+        position: absolute
+        width: 59px
+        height: 59px
+        background: linear-gradient(302.13deg, rgba(186, 230, 255, 0.4015) -32.53%, rgba(158, 0, 238, 0.511) 89.34%), #54F5FF
+        top: 14px
+        left: 15px
+        border-radius: 6px
+        display: flex
+        align-items: center
+        justify-content: center
+        font-size: 19px
+        line-height: 23px
+        color: #fff
+        z-index: 2
+        @media all and (max-width: 1060px)
+          top: 23px
+
+      .action_buttons
+        list-style-type: none
+        height: 67px
+        position: absolute
+        right: 0
+        padding: 0 21px
+        display: flex
+        align-items: center
+        z-index: 2
+        top: 0
+        @media all and (max-width: 1060px)
+          flex-direction: column-reverse
+          justify-content: flex-start
+          height: auto
+
+        .chosen_icon
+          margin-top: 23px
+          margin-bottom: 13px
+
+.chosen_icon
+  margin-left: 18px
+  position: relative
+  width: 30px
+  height: 27px
+
+  .heart_stroke
+    stroke: rgba(53, 53, 53, 0.5)
+    fill: transparent
+
+    &:hover
+      stroke: #EB5757
+
+  .heart_fill
+    display: none
+
+  &.active .heart_fill
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    fill: #D75A4A
+
+  &.active .heart_stroke
+    display: none
+
+.balance_icon
+  margin-left: 18px
+  position: relative
+  width: 30px
+  height: 27px
+  fill: rgba(53, 53, 53, 0.5)
+
+  &:hover
+    fill: #FFE03F
+    transition-duration: 0s
+
+  &:active
+    fill: #EBD292
+    transition-duration: 0s
+
+  &.active
+    fill: #FFB802
+
+.rate_row
+  width: 100%
+  margin-top: 18px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 0 15px
+
+  .rate_rev
+    font-size: 13px
+    line-height: 15px
+    color: #6C6C6C
+    font-family: $ui
+
+  .star_stat
+    list-style-type: none
+    display: flex
+    align-items: center
+    margin: 0
+    padding: 0
+
+    li
+      margin-right: 3px
+
+      .star_stroke
+        fill: rgba(0, 0, 0, 0.24)
+
+        &:hover
+          fill: #EB3939
+
+      .star_fill
+        display: none
+
+      &.active .star_fill
+        display: block
+        fill: #EB3939
+
+      &.active .star_stroke
+        display: none
+
+.prod_info
+  padding-bottom: 20px
+
+  .prod_title
+    padding: 10px 15px 18px 15px
+    margin: 0
+    font-family: 'SF UI Display Bold', sans-serif
+    font-size: 19px
+    line-height: 23px
+    @media all and (max-width: 1060px)
+      font-size: 16px
+
+  .prod_price_block
+    width: 100%
+    display: flex
+    align-items: center
+    padding: 0 15px
+    margin-bottom: 32px
+
+    span
+      display: flex
+      height: 40px
+      border-radius: 20px
+      background-color: rgba(255, 237, 79, 0.5)
+      align-items: center
+      padding: 0 19px 0 24px
+      font-family: 'SF UI Display Bold', sans-serif
+      font-size: 19px
+      line-height: 22px
+      color: #000000
+      position: relative
+      @media all and (max-width: 1440px)
+        font-size: 15px
+
+      &:after
+        content: attr(data-oldprice)
+        position: absolute
+        left: calc(100% + 18px)
+        top: 50%
+        transform: translateY(-50%)
+        white-space: nowrap
+        font-size: 16px
+        color: #ABABAB
+        line-height: 18px
+        font-family: $ui
+        text-decoration: line-through
+        @media all and (max-width: 1440px)
+          font-size: 14px
+
+  .tween_btns
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    padding: 0 15px
+    .button
+      width: calc(50% - 3px)
+    button
+      min-width: 155px
+
+    .button--fill_btn
+      padding: 0 10px
+      text-align: center
+      @media screen and (max-width: 1480px)
+        font-size: 11px
+      @media all and (max-width: 1060px)
+        font-size: 13px
+
+    .button--ghost_btn
+      padding: 0 10px
+      text-align: center
+      @media screen and (max-width: 1480px)
+        font-size: 11px
+      @media all and (max-width: 1060px)
+        font-size: 13px
+
+.button
+  height: 45px
+  display: flex
+  align-items: center
+  justify-content: center
+  text-transform: uppercase
+  box-sizing: border-box
+
+.button--fill_btn
+  border: 1px solid transparent
+  border-radius: 6px
+
+  &:hover
+    background-color: #FFB802
+    color: white
+
+  &:active
+    background-color: #FCDD6E
+    color: #C39900
+    transition-duration: 0s
+
+.button--ghost_btn
+  border-radius: 6px
+
+  &:hover
+    background-color: #FFB802
+    color: white
+    border: 1px solid transparent
+
+  &:active
+    background-color: #FCDD6E
+    color: #C39900
+    border: 1px solid transparent
+    transition-duration: 0s
+
+.button--fill_btn_blue
+  background-color: #008AD8
+  font-size: 13px
+  line-height: 16px
+  letter-spacing: 0.03em
+  font-family: 'SF UI Display Bold', sans-serif
+  color: white
+
+.button--ghost_btn_blue
+  border: 1px solid #008AD8
+  font-size: 13px
+  line-height: 16px
+  letter-spacing: 0.03em
+  font-family: 'SF UI Display Bold', sans-serif
+
+.aside_info
+  width: 100%
+  font-size: 13px
+  line-height: 16px
+  padding: 7px 15px 13px
+  font-family: 'SF UI Display Bold', sans-serif
+  margin: 0
+
+
+.solo_btn
+  padding: 0 15px
+  position: relative
+
+  .button
+    width: 100%
+    border-radius: 8px
+
+
+
+  svg
+    fill: #F9C300
+    transform: rotateY(180deg)
+    @media all and (min-width: 641px)
+      display: none
+
+.button--fill_btn_yellow
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: #FFF73F
+  font-size: 13px
+  letter-spacing: 0.03em
+  font-family: 'SF UI Display', sans-serif
+  color: #000
+  height: 40px
+  font-weight: 600
+  margin: 0 auto
+  max-width: 225px
+
+.col-xs-6
+  @media screen and (max-width: 575px)
+    -ms-flex: 0 0 50%
+    flex: 0 0 50%
+    max-width: 50%
+
+
+.pagination
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-bottom: 25px
+
+  ul
+    list-style-type: none
+    display: flex
+    align-items: center
+    border: 1px solid #95AAC2
+    border-radius: 6px
+    padding: 0
+    margin: 0
+
+    li
+      width: 44px
+      height: 30px
+      border-right: 1px solid #95AAC2
+      font-family: 'SF UI Display Bold', sans-serif
+      font-size: 18px
+      line-height: 21px
+
+      &.active
+        border-right: 1px solid transparent
+        background-color: #008AD8
+
+      &.active a
+        color: #fff
+
+      a
+        color: #95AAC2
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 100%
+        height: 100%
+
+        &:hover
+          background-color: rgba(0, 138, 216, 0.08)
+
+      &:last-child
+        border-right: none
+
+      &.pag_next svg
+        transform: rotateY(180deg)
+
+      svg
+        fill: #95AAC2
+
+
+.boat_button
+  margin: 0 20px 18px 0
+  display: flex
+  justify-content: center
+  align-items: center
+  background-color: #fff
+  border-radius: 8px
+  padding: 0 20px
+  height: 43px
+  border: 1px solid #A3BFDF
+
+.boat_button:hover
+  border: 1px solid #FFE03F
+  background-color: #FFE03F
+
+  a:hover
+    font-weight: 700
+
+.boat_buttons_cnt
+  display: flex
+  flex-wrap: wrap
+  justify-content: flex-start
+
+.blue_sorting
+  display: flex
+  flex-wrap: wrap
+  background: #0073DC
+  border: 1px solid #008AD8
+  box-sizing: border-box
+  border-radius: 10px
+  padding: 0 0 0 41px
+  height: 138px
+  margin: 11px 0 30px
+  align-items: center
+
+.blue_sorting .sort_cnt
+  display: flex
+  flex-wrap: wrap
+
+.boats_main
+  background: linear-gradient(255.75deg, rgba(117, 180, 255, 0.1) 3.79%, rgba(117, 180, 255, 0.065) 119%)
+  padding: 80px 0
+
+.boat_cnt
+  padding: 15px
+  background-color: #fff
+  border: 2px solid #95AAC2
+  border-radius: 10px
+  text-align: center
+  margin: 15px 0
+  &:hover
+    border: 2px solid #F9C300
+
+  img
+    width: 100%
+
+.boat_title
+  text-align: center
+  height: 68px
+  font-size: 22px
+  line-height: 23px
+  margin-top: 15px
+
+.sort_cnt
+  display: flex
+  align-items: center
+
+  label
+    font-size: 19px
+    color: #fff
+    line-height: 23px
+
+.sort_separated
+  margin-right: 48px
+
+  label
+    font-size: 19px
+    color: #fff
+    line-height: 23px
+    margin-bottom: 11px
+
+.input_cnt
+  width: 236px
+  position: relative
+  border: 0
+  outline: 0
+  padding: 0 20px
+  border-radius: 8px
+  line-height: 35px
+  margin-right: 15px
+  background: #FFFFFF
+  height: 35px
+  box-shadow: inset 0px 0px 11px rgba(0, 0, 0, 0.07)
+  input
+    width: 100%
+    cursor: pointer
+  p
+    font-size: 14px
+    color: rgba(53, 53, 53, 0.95)
+    margin-bottom: 0
+    font-family: 'SF UI Display', sans-serif
+
+  svg
+    position: absolute
+    font-size: 15px
+    z-index: 99999
+    top: 50%
+    right: 10px
+    width: 11px
+    height: 9px
+    transform: translateY(-50%)
+
+
+.rotated
+  transform: translateY(-50%) rotate(180deg) !important
+
+
+.white_bar
+  width: 84px
+  height: 36px
+  background: #FFFFFF
+  border: 1px solid #FFFFFF
+  border-radius: 20px
+  display: flex
+  align-items: center
+  position: relative
+
+.grey_round
+  width: 31px
+  height: 31px
+  background-color: #AEC7DE
+  border-radius: 20px
+  position: absolute
+  left: 2px
+  top: 50%
+  transform: translateY(-50%)
+  transition: all .2s ease-in-out
+
+.grey_round.clicked
+  left: calc(100% - 33px)
+  background-color: #F9C300
+
+.sort_right
+  display: flex
+  justify-content: center
+  align-items: center
+  border-left: 1px solid rgba(255, 255, 255, 0.62)
+  .sort_separated
+    margin-right: 0
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.white_icon
+  width: 70px
+  height: 35px
+  background: #FFFFFF
+  border-radius: 10px
+  display: flex
+  justify-content: center
+  align-items: center
+
+  svg
+    width: 12px
+    height: 12px
+
+.filter
+  width: 350px
+  position: absolute
+  right: 15px
+  top: 0
+  z-index: 9
+  transition: .5s
+  overflow: hidden
+  form
+    width: 350px
+  &.display
+    width: 0
+    display: inline-block
+    overflow: hidden
+
+
+.first_range
+  border-top-left-radius: 10px
+  border-top-right-radius: 10px
+
+//body
+//  width: 100vw
+
+
+.price_range
+  border-bottom: 1px solid #A3BFDF
+  padding: 15px
+  background: #fff
+  box-sizing: border-box
+  &:last-child
+    border-bottom: none
+
+.filter
+  height: 100%
+
+.filter_top_panel
+  display: flex
+  justify-content: space-between
+
+  span
+    font-size: 16px
+    line-height: 19px
+    color: #000000
+    position: relative
+    font-family: 'SF UI Display Bold', sans-serif
+
+    svg
+      width: 20px
+      height: 20px
+
+.open_icon
+  svg
+    width: 14px !important
+    height: 14px !important
+    -ms-transform: rotate(0deg)
+    -moz-transform: rotate(0deg)
+    -webkit-transform: rotate(0deg)
+    transform: rotate(0deg)
+
+.filter_bottom_panel
+  min-height: 75px
+
+.opened
+  -ms-transform: rotate(180deg)
+  -moz-transform: rotate(180deg)
+  -webkit-transform: rotate(180deg)
+  transform: rotate(180deg)
+  -webkit-transition: 1s time
+  -moz-transition: 1s time
+  -ms-transition: 1s time
+  -o-transition: 1s time
+  transition: 1s time
+
+.checkbox_panel
+  margin-top: 20px
+  overflow-y: scroll
+  height: 165px
+
+.checkbox_cnt
+  display: flex
+  min-height: 28px
+  height: auto
+  p
+    margin-left: 10px
+    user-select: none
+    width: calc(100% - 25px)
+
+  label
+    display: flex
+
+  &.active svg
+    display: block
+
+
+.checkbox_cnt.radio_parent
+  opacity: 0.6
+  &.active
+    opacity: 1
+
+.check_cnt
+  width: 18px
+  height: 18px
+  border: 1px solid #A3BFDF
+  border-radius: 3px
+  display: block
+  position: relative
+  svg
+    width: 12px
+    height: 12px
+    fill: #008AD8
+    display: none
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    right: 0
+    left: 0
+    margin: 0 auto
+
+
+.check-yellow
+  border: 1px solid #FFF73F
+
+.scrollbar
+  overflow-y: scroll
+
+
+
+#style-10::-webkit-scrollbar-track, #style-11::-webkit-scrollbar-track, #style-12::-webkit-scrollbar-track
+  border-radius: 10px
+  border: 1px solid #ababab
+  background-color: #ffff
+
+#style-10::-webkit-scrollbar, #style-11::-webkit-scrollbar, #style-12::-webkit-scrollbar
+  width: 12px
+  height: 20px
+  background-color: #fff
+
+#style-10::-webkit-scrollbar-thumb, #style-11::-webkit-scrollbar-thumb, #style-12::-webkit-scrollbar-thumb
+  border-radius: 10px
+  background-color: #008AD8
+
+#style-4, #style-3, #style-5, #style-6, #style-7, #style-8, #style-9
+  margin-top: 20px
+
+
+.btn-reset, .btn-show
+  background: white
+  font-family: $ui
+  font-size: 13px
+  text-align: center
+  letter-spacing: 0.03em
+  text-transform: uppercase
+  padding: 15px 30px
+  border: 1px solid #F9C300
+  box-sizing: border-box
+  border-radius: 8px
+  font-weight: 700
+  outline: none
+
+  &:hover
+    background: #F9C300
+    color: white
+
+.last_range
+  display: flex
+  justify-content: space-between
+  border-bottom-left-radius: 10px
+  border-bottom-right-radius: 10px
+  button
+    outline: none
+
+//.filter
+//  transition: 0.4s
+
+.display
+  display: none
+
+
+
+.icon:hover
+  body
+    background: red
+
+.help_main
+  width: 100%
+  min-height: 288px
+  background: linear-gradient(to right, #54C1FF, #9F3EFF)
+  position: relative
+  overflow: hidden
+
+.help_main_container
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+  width: 100%
+  max-width: 1300px
+  padding-right: 7%
+  img
+    width: 50%
+
+.help_main-btn
+  width: 210px
+  height: 40px
+
+.lower_main
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  max-width: 1520px
+  margin-top: 70px
+  margin-bottom: 115px
+
+.lower_main-left
+  max-width: 836px
+.lower_main-left h3
+  margin-bottom: 28px
+
+.lower_main-right
+  max-width: 502px
+
+.river-boats
+  padding: 0
+  width: 100%
+  display: flex
+  justify-content: space-between
+.lower_main-left > div
+  position: relative
+
+.lower_main-left video
+  width: 100%
+  min-height: 373px
+  margin-bottom: 44px
+  margin-top: 70px
+
+.lower_main-left svg
+
+  width: 32px
+  height: 29px
+  &:hover
+    fill: #FFB802
+    cursor: pointer
+
+.yellow-circle
+  padding-left: 4px
+  transform: translateY(-50%) translateX(-50%)
+  position: absolute
+  top: 50%
+  left: 50%
+  background-color: #FFD702
+  width: 74px
+  height: 74px
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+  transition: all .8s
+  border: none
+  outline: 0
+  svg
+    width: 32px
+    height: 29px
+  &:hover
+    background-color: #FFB802
+  &:active, &:focus
+    background-color: $color-goldenrod
+  &:before
+    content: ""
+    top: 50%
+    left: 50%
+    transform: translateY(-50%) translateX(-50%)
+    position: absolute
+    width: 90px
+    height: 90px
+    border: 2px solid rgba(255, 215, 2, 0.35)
+    border-radius: 50%
+  &:hover:before
+    border: 2px solid rgba(255, 184, 2, 0.57)
+  &:after
+    content: ""
+    top: 50%
+    left: 50%
+    transform: translateY(-50%) translateX(-50%)
+    position: absolute
+    width: 107px
+    height: 107px
+    border: 2px solid rgba(255, 215, 2, 0.35)
+    border-radius: 50%
+  &:hover:after
+    border: 2px solid rgba(255, 184, 2, 0.13)
+
+
+
+  &:active:before
+    border: 2px solid rgba(255, 215, 2, 0.35)
+
+  &:active:after
+    border: 2px solid rgba(255, 238, 148, 0.35)
+
+.riviera
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+  max-width: 162px
+  max-height: 195px
+  background: #FFFFFF
+  border: 2px solid #A3BFDF
+  box-sizing: border-box
+  border-radius: 10px
+  position: relative
+  padding: 10px 20px
+  img
+    width: 100%
+
+.riviera .icon
+  position: absolute
+  bottom: 15px
+  left: 10px
+  width: 23.29px
+  height: 26.19px
+
+.mobile-lower-bottom
+  display: none
+  h3
+    font-size: 21px
+    line-height: 25px
+
+.blue-bg
+  box-sizing: border-box
+  margin-top: 26px
+  width: 100%
+  min-height: 590px
+  background-image: url(../img/bluebg.png)
+  background-repeat: no-repeat
+  background-size: cover
+  border-radius: 10px
+  color: white
+  padding: 55px 50px
+  background-position: right bottom
+
+.blue-bg_title
+  font-family: SF UI Display, sans-serif
+  font-size: 20px
+  line-height: 27px
+  color: #FFFFFF
+  margin-bottom: 5px
+  font-weight: 600
+
+.blue-bg_text
+  font-size: 16px
+  line-height: 26px
+  font-family: SF UI Display, sans-serif
+
+
+.flat > div
+  flex: 0 0 calc(100% - 370px)
+  max-width: calc(100% - 370px)
+
+
+.flat .element_grid__el .prod_preview
+  width: 365px
+  height: auto
+  padding-bottom: 30px
+.flat .prod_title
+  display: none
+
+
+.flat .prod_info.aside_info.character_info
+  width: 100% !important
+
+
+
+@media (max-width: 400px)
+ .help_main_container
+    flex-direction: column
+    align-items: center
+    img
+      width: 50%
+
+
+
+.element_grid
+  &.flat
+    article
+      display: flex
+      justify-content: space-around
+
+.blue_separated
+  margin: 15px 0
+
+.help-title
+  font-size: 18px
+  line-height: 28px
+  color: #fff
+
+.upper-title
+  font-size: 35px
+  text-transform: uppercase
+  line-height: 40px
+  font-family: SF UI Display, sans-serif
+
+.help-right-content
+  padding: 35px 0
+
+.form-input
+  position: relative
+  margin-right: 10px
+  input
+    padding: 0.188rem 2rem
+    width: 100%
+    max-width: 225px
+    outline: 0
+    font-family: SF UI Display, sans-serif
+    height: auto
+
+.name-icon
+  position: absolute
+  left: 10px
+  top: 50%
+  transform: translateY(-50%)
+  svg
+    width: 15px
+    height: 15px
+
+.form-top
+  display: flex
+  input::placeholder
+    color: #6897FF
+  input::placeholder :-ms-input-placeholder
+    color: #6897FF
+  input::placeholder ::-ms-input-placeholder
+    color: #6897FF
+
+.form-bottom
+  margin-top: 25px
+  p
+  font-size: 13px
+  line-height: 17px
+  letter-spacing: 0.02em
+  color: #FFFFFF
+  font-family: $ui
+
+
+
+.element_grid.flat
+  .element_grid__el
+    width: 100%
+    display: flex
+    align-items: stretch
+    justify-content: space-between
+    .prod_char_block
+      width: calc(100% - 293px - 365px)
+      max-width: calc(100% - 293px - 365px)
+      padding-left: 47px
+      padding-right: 33px
+    .prod_info
+      width: 293px
+
+.glat_title
+  font-size: 19px
+  line-height: 23px
+  color: #000000
+  font-family: 'SF UI Display Bold', sans-serif
+  margin-bottom: 10px
+
+.prod_char_block
+  margin: 35px 0 30px
+
+.character-listed
+  list-style: none
+  padding-left: 0
+  font-family: $ui
+  &>li
+    border-bottom: 1px dotted #7C7C7C
+    display: flex
+    justify-content: space-between
+    margin: 7px 0
+    span
+      display: block
+      margin-bottom: -8px
+      background: #fff
+      padding: 0 3px
+
+.right-char
+  font-size: 15px
+  line-height: 25px
+  color: #000
+
+.quest_icon
+  color: #7C7C7C
+  font-size: 15px
+  line-height: 25px
+  &>svg
+    width: 16px
+    height: 16px
+
+.more-button
+  width: 146px
+  height: 45px
+  display: flex
+  justify-content: center
+  align-items: center
+  border: 1px solid #F9C300
+  text-transform: uppercase
+  border-radius: 6px
+  margin-top: 15px
+  float: right
+  a
+    color: #000
+
+.character-rate
+  padding: 0
+  margin: 0 0 20px 0
+  width: 90%
+
+.have-text
+  font-size: 13px
+  color: #000000
+
+.character-info .tween_btns
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  padding: 0 15px
+
+
+.element_grid .element_grid__el .prod_preview .charachter_we_have + .aside_character
+  display: none
+
+
+.element_grid.flat .element_grid__el .prod_preview .charachter_we_have + .aside_character
+  display: block
+
+.element_grid.flat .character_info
+  margin-top: 16px
+
+
+#pageHtml .element_grid.flat .we_have
+  bottom: 33px
+
+
+.aside_info
+  .tween_btns
+    display: none
+.prod_char_block
+  display: none
+.prod_charachter
+  display: none
+  width: 280px
+  text-align: center
+  font-family: $ui
+  margin-top: 35px
+
+.element_grid.flat
+
+  .prod_info
+    width: 293px
+  .aside_info
+    .tween_btns
+      display: flex
+  .prod_char_block
+    display: block
+  .prod_main
+    display: none
+  .prod_charachter
+    display: block
+
+.old-price
+  color: #ABABAB
+  text-decoration: line-through
+  font-size: 19px
+  line-height: 22px
+
+.new-price
+  font-weight: 600
+  font-size: 27px
+  line-height: 31px
+  margin: 10px auto 20px
+  background: rgba(255, 237, 79, 0.5)
+  border-radius: 50px
+  width: 187px
+  height: 58px
+  display: flex
+  justify-content: center
+  align-items: center
+
+.grey-buttons
+  margin-top: 35px
+  button
+    width: 225px
+    height: 45px
+    display: flex
+    justify-content: center
+    align-items: center
+    border: 1px solid #95AAC2
+    border-radius: 6px
+    background: #fff
+    margin: 10px auto
+    color: #959595
+    outline: 0
+    text-transform: uppercase
+    svg
+      fill: #959595
+      width: 24px
+      height: 24px
+    span
+      margin: 0 10px
+
+
+.aside_character
+    padding: 15px 20px
+
+.element_grid.flat .aside_character
+  padding: 20px 20px 0
+  margin-top: 15px
+
+
+
+.character_info
+  padding: 0
+  margin-top: 16px
+
+.blue-sorting_mobile
+  display: none
+
+.mobile-select-content
+  display: flex
+  .show-select .input-menu
+    left: unset
+    right: 0
+
+.mobile-select
+  font-size: 18px
+  line-height: 21px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 10px 41px 10px 19px
+  border-right: 1px solid #fff
+  border-bottom: 1px solid #fff
+  width: 50%
+  color: #fff
+  position: relative
+  height: 48px
+  svg
+    width: 16px
+    height: 13px
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    right: 12px
+  p
+    margin-bottom: 0
+    &:after
+      content: attr(data-detail)
+  .white_icon
+    width: 34px
+    height: 25px
+    position: absolute
+    right: 10px
+    svg
+      width: 16px
+      height: 13px
+      right: auto
+
+
+
+
+
+
+.blue-sorting-bottom
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 10px
+  p
+    font-size: 18px
+    line-height: 21px
+    color: #FFFFFF
+    margin-bottom: 0
+    margin-right: 15px
+  .white_bar
+    width: 60px
+    height: 26px
+  .grey_round
+    width: 22px
+    height: 22px
+
+.boats_main_mobile
+  display: none
+  background: url(../img/blue-background.png) no-repeat
+  background-size: cover
+
+.mobile-help-right
+  display: none
+
+.mobile-help-title
+  font-size: 28px
+  line-height: 33px
+  text-transform: uppercase
+  color: #FFFFFF
+  margin-bottom: 0
+
+.mobile-help-text
+  font-size: 18px
+  color: #FFFFFF
+  margin-bottom: 0
+
+.lower-mobile
+  display: none
+  background: linear-gradient(263.02deg, rgba(117, 180, 255, 0.15) 3.79%, rgba(117, 180, 255, 0.0975) 119%)
+  padding: 0 35px
+
+
+
+.lower-mobile-title
+  font-size: 29px
+  line-height: 35px
+  color: #1D1D1D
+  margin: 40px 0
+  display: none
+
+.rivera-mobile-title
+  font-size: 17px
+  line-height: 28px
+  color: #1D1D1D
+  margin: 25px 0
+
+.rivera-second-title
+  font-size: 25px
+  line-height: 30px
+  color: #1D1D1D
+
+.man-mobile-right
+  margin-left: 20px
+
+.right-icon
+  position: absolute
+  right: 0
+  transform: translateY(-50%) rotate(180deg)
+  top: calc(50% - 35px)
+  width: 46px
+  height: 46px
+  background: #FFD84F
+  display: flex
+  justify-content: center
+  align-items: center
+  border-radius: 50%
+  color: #fff
+  svg
+    color: #fff
+
+
+.left-icon
+  position: absolute
+  left: 0
+  transform: translateY(-50%)
+  top: calc(50% - 35px)
+  width: 46px
+  height: 46px
+  background: #FFD84F
+  display: flex
+  justify-content: center
+  align-items: center
+  border-radius: 50%
+  color: #fff
+  svg
+    color: #fff
+
+body.active
+  .flat > div
+    width: 100%
+    flex: 0 0 100%
+    max-width: 100%
+    font-size: 15px
+
+.yellow-rotated
+  background-color: #FFD84F
+  transform: rotate(35deg) translateY(-50%)
+  height: 120px
+  position: absolute
+  left: calc(100% - 530px)
+  top: 50%
+  width: 760px
+  display: flex
+  justify-content: center
+  align-items: center
+  p
+    margin-bottom: 0
+    font-size: 18px
+    line-height: 28px
+    text-align: center
+    letter-spacing: 0.03em
+    color: #000
+    font-weight: 600
+
+.input-main
+  position: relative
+  z-index: 9
+.input-menu
+  max-width: 236px
+  min-width: 250px
+  padding-top: 40px
+  position: absolute
+  width: 100%
+  top: -5px
+  left: 0
+  display: none
+  ul
+    padding: 0 20px
+    list-style: none
+    border-bottom-left-radius: 8px
+    border-bottom-right-radius: 8px
+    background-color: #fff
+    border: 1px solid #0073DC
+    li
+      border-bottom: 1px solid #95AAC2
+      padding: 8px 0
+      font-family: 'SF UI Display', sans-serif
+      position: relative
+      cursor: pointer
+      svg
+        right: 0
+      span
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        right: 0
+
+    li:last-child
+      border-bottom: none
+
+.input_cnt:focus + .input-menu
+  display: block
+.input_cnt:focus svg
+  transform: translateY(-50%) rotate(180deg) !important
+
+.mobile-select:focus .input-menu
+  display: block
+  z-index: 3
+
+.mobile-select
+  outline: 0
+
+  .input-menu
+    z-index: 9
+    max-width: unset
+    width: 100%
+    top: 10px
+
+  li
+    color: #393939
+
+
+.yellow-minus
+  width: 34px
+  height: 25px
+  background: #FFFFFF
+  border-radius: 7px
+  display: flex
+  justify-content: center
+  align-items: center
+
+.minus
+  width: 3px
+  height: 12px
+  background: #0073DC
+  z-index: 99
+  display: block
+  border-radius: 20px
+
+.plus
+  width: 3px
+  height: 12px
+  background: #0073DC
+  z-index: 99
+  display: block
+  transform: rotate(90deg)
+  position: absolute
+  border-radius: 20px
+
+
+@media all and (max-width: 1200px)
+  .blue_sorting
+    display: none
+  .help_main
+    .col-lg-4
+      display: none
+    .col-lg-6
+      margin: 0 auto
+      flex: 0 0 80%
+      max-width: 100%
+    .man-mobile-right
+      margin-right: auto
+
+  .mobile-select .input-menu
+    top: 7px
+
+  .blue-sorting_mobile
+    display: block
+    background-color: #0073DC
+    border-radius: 8px
+    margin: 0 0 25px
+
+  .boats-main-content
+    display: none
+
+  #pageHtml .blue-bg
+    padding: 23px
+
+
+  .chosen_section_title
+    height: auto
+    margin-top: 30px
+
+  .boats_main
+    display: none
+
+  .boats_main_mobile
+    display: block
+
+  .help_main
+    background: url(../img/blue_mobile-img.png) no-repeat
+    background-size: cover
+    .yellow-rotated
+      display: none
+
+  .consultant-img
+    display: none
+
+  .help-title
+    display: none
+
+  .mobile-help-right
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 20px
+
+  .lower_main-left, .lower_main-right
+    display: none
+
+  .lower-mobile
+    display: block
+
+  .lower_main
+    margin-top: 0
+    margin-bottom: 0
+
+  .blue-bg
+    padding: 45px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-bottom: 55px
+    min-height: unset
+
+  .blue_separated
+    margin: 0
+    width: 48%
+
+  .river-boats
+    max-width: 525px
+
+  .boat_cnt
+    margin: 10px 0
+
+  body.active .flat > div
+    width: 50%
+    max-width: 50%
+    flex: 0 0 50%
+    font-size: 15px
+
+  .aside_info.aside_character + div
+    display: none
+
+@media all and (min-width: 650px) and (max-width: 1200px)
+  #pageHtml .element_grid.flat > div
+    flex: 0 0 50% !important
+@media all and (max-width: 950px)
+  .help-main
+    .col-lg-6
+      flex: 0 0 80%
+#pageHtml .element_grid.flat > div
+  width: 100%
+  max-width: 100%
+  flex: 0 0 100%
+
+.prod-info-mobile
+  display: none
+  padding: 0 10px
+
+.more-charachter
+  text-decoration: underline
+  font-size: 15px
+  line-height: 20px
+  text-align: right
+  color: #008AD8
+  display: block
+.min_price_block
+  width: 100%
+  display: flex
+  align-items: center
+.min_price_block
+  display: none
+.mob_more_button
+  display: none
+@media all and (max-width: 1220px)
+  .min_price_block
+    display: flex
+  body.active .flat > div
+    width: 50%
+    flex: 0 0 50%
+    max-width: 50%
+  body.active .flat > div
+    width: 50%
+    flex: 0 0 50%
+    max-width: 50%
+  .element_grid .col-lg-3
+    width: 50%
+    flex: 0 0 50%
+    max-width: 50%
+  .element_grid.flat .element_grid__el
+    flex-direction: column
+    align-items: flex-start
+    padding-bottom: 10px
+  .flat .element_grid__el .prod_preview
+    width: 100%
+  .element_grid.flat .element_grid__el .prod_char_block
+    width: 100%
+    max-width: 100%
+    padding: 0 15px
+    display: flex
+    flex-direction: column
+  .element_grid.flat .character-rate
+    order: -1
+    width: 100%
+  .element_grid.flat .element_grid__el .prod_preview .charachter_we_have + .aside_character
+    display: none
+  .element_grid.flat .element_grid__el .aside_info + .prod_info
+    display: none
+  .element_grid.flat .element_grid__el .prod_char_block
+    margin-top: 0
+  .element_grid.flat .min_price_block .new-price
+    margin: 0
+    height: 37px
+    padding: 0 22px
+    width: auto
+    font-size: 19px
+    line-height: 22px
+    margin-right: 17px
+  .element_grid.flat .min_price_block .old-price
+    margin-bottom: 0
+    font-size: 15px
+    line-height: 17px
+  .element_grid.flat .mob_more_button
+    display: block
+    text-align: right
+    a
+      text-decoration: underline
+      font-size: 15px
+      line-height: 20px
+      color: #008AD8
+
+  .element_grid.flat .more-button
+    display: none
+  .element_grid.flat .prod_charachter
+    display: none
+  .element_grid.flat .prod_main
+    display: block
+    width: 100%
+    .rate_row
+      display: none
+    .prod_price_block
+      display: none
+  .element_grid.flat .element_grid__el .prod_info
+    width: 100%
+  .element_grid.flat .element_grid__el .prod_info .tween_btns + .aside_info
+    display: block
+  .element_grid.flat .element_grid__el .solo_btn
+    height: 45px
+  .element_grid.flat .element_grid__el .solo_btn a
+    max-width: none
+
+
+.element_grid.flat .element_grid__slider
+  height: 298px
+
+.element_grid .aside_info + .solo_btn a
+  max-width: none
+  height: 45px
+
+@media all and (max-width: 680px)
+  .element_grid .col-lg-3
+    width: 100%
+    flex: 0 0 100%
+    max-width: 100%
+
+
+@media all and (max-width: 640px)
+  #chosen_body .chosen_section_title
+    height: auto
+    flex-direction: column
+    padding-top: 18px
+
+  #chosen_body .grid_btn
+    text-indent: -100000px
+    position: absolute
+    height: 20px
+    right: 6px
+    width: 97px
+    margin: 0
+    top: -21px
+    background-color: transparent
+
+  #chosen_body .aside_info
+    display: none
+
+  #chosen_body .tween_btns
+    display: none
+
+  #chosen_body .prod_price_block
+    margin-bottom: 0
+    padding: 0 10px
+
+  #chosen_body .prod_price_block span
+    font-size: 12px
+    line-height: 14px
+    height: 22px
+    padding: 0 12px
+
+  #chosen_body .prod_price_block span:after
+    display: none
+
+  #chosen_body .prod_title
+    font-size: 12px
+    line-height: 15px
+    padding-left: 10px
+    padding-right: 10px
+
+  #chosen_body .prod_info
+    padding-bottom: 15px
+
+  #chosen_body .rate_row
+    display: none
+
+  #chosen_body .action_buttons
+    padding: 0 10px
+
+  #chosen_body .percent
+    display: none
+
+  #chosen_body .carousel-control-next
+    display: none
+
+  #chosen_body .carousel-control-prev
+    display: none
+
+  #chosen_body .we_have
+    display: none
+
+  #chosen_body .prod_preview
+    padding-bottom: 20px
+    height: 173px
+
+  #chosen_body .element_grid__el
+    margin-bottom: 10px
+
+  #chosen_body .element_grid
+    padding: 0 10px
+    .col-lg-3
+      padding: 0 5px !important
+
+  #chosen_body .chosen_section_title span
+    width: 100%
+    height: 34px
+    border-radius: 0
+    justify-content: center
+    margin-bottom: 22px
+
+  #chosen_body .chosen_section_title h2
+    padding: 0 10px
+    text-align: center
+    font-size: 24px
+    line-height: 29px
+
+
+.filter_mob_action
+  display: none
+  svg
+    width: 15px
+    height: 15px
+
+@media all and (max-width: 480px)
+  .prod_preview
+    padding-bottom: 0
+    height: 128px
+  .man-mobile-left, .man-mobile-right
+    display: none
+  .help-title
+    display: block
+    text-align: center
+    font-size: 16px
+
+
+
+
+
+.tooltip-inner
+  background-color: #fff
+  border: 1px solid #6897FF
+  color: #000
+
+.tooltip.in
+  opacity: 1
+  filter: alpha(opacity=80)
+
+
+.tooltip.bs-tooltip-bottom .arrow:before
+  border-bottom-color: #6897FF !important
+
+.tooltip.show
+  opacity: 1
+
+.tooltip-main
+  width: 100px
+  height: 20px
+  background-color: #fff
+  position: absolute
+
+.tooltip-main::before
+  content: " "
+  position: absolute
+  width: 0
+  height: 0
+  border-style: solid
+  border-width: 0 10px 10px 10px
+  border-color: transparent transparent #6897FF transparent
+
+.price_range
+  position: relative
+
+
+.filter-mobile p:after
+  display: none
+  content: attr(data-full)
+
+
+.filter-mobile.active
+  p:after
+    display: block
+  .open-filter
+    background-color: #FFD84F
+    cursor: pointer
+    .minus
+      display: none
+
+.top_tooltip
+  border: 1px solid #6897FF
+  position: absolute
+  background-color: #fff
+  padding: 9px 14px
+  border-radius: 4px
+  display: none
+  top: calc(100% + 6px)
+  min-width: 280px
+  width: 100%
+  font-size: 13px
+
+
+.top_tooltip:after, .top_tooltip:before
+  bottom: 100%
+  left: calc(50% - 8px)
+  border: solid transparent
+  content: " "
+  height: 0
+  width: 0
+  position: absolute
+  border-color: rgba(255, 255, 255, 0)
+
+.top_tooltip:before
+  border-bottom-color: #6897FF !important
+  margin-left: 0
+  border-width: 9px
+
+.top_tooltip:after
+  border-bottom-color: #fff !important
+  margin-left: 2px
+  border-width: 7px
+
+
+.filter_top_panel .info:hover .top_tooltip
+  display: block
+  left: 50%
+  transform: translateX(-50%)
+  z-index: 9
+
+.lower-min-title
+  font-size: 29px
+  line-height: 35px
+  margin: 40px 0
+
+.right_tooltip
+  border: 1px solid #606060
+  position: absolute
+  background-color: #FFDF3F
+  padding: 9px 14px
+  border-radius: 4px
+  display: none
+  top: 50%
+  transform: translateY(-50%)
+  right: calc(100% + 13px)
+  font-size: 12px
+  text-transform: uppercase
+  font-weight: 600
+
+
+.right_tooltip:after, .right_tooltip:before
+  left: 100%
+  top: 50%
+  border: solid transparent
+  content: " "
+  height: 0
+  width: 0
+  position: absolute
+  border-color: rgba(255, 255, 255, 0)
+
+.right_tooltip:before
+  border-left-color: rgba(96,96,96,1) !important
+  margin-top: -12px
+  border-width: 12px
+
+.right_tooltip:after
+  border-left-color: rgba(255,223,63,1) !important
+  margin-top: -10px
+  border-width: 10px
+
+
+.filter_top_panel .info:hover .right_tooltip
+  display: block
+  z-index: 9
+
+.catal_section_title
+  width: 100%
+  padding: 42px 0 47px
+
+.sort_action
+  width: calc(100% - 365px)
+.filter_panel
+  width: 365px
+  height: 100px
+  .sort_right
+    height: 100%
+
+
+#pageHtml .element_grid .prod_preview
+  height: 355px
+
+
+#pageHtml .rate_row
+  margin-top: 0
+
+#pageHtml .element_grid .element_grid__el .prod_preview
+  padding-bottom: 60px
+
+#pageHtml .we_have
+  bottom: 18px
+
+.lower-mobile-content
+  display: none
+
+@media all and (max-width: 1600px)
+  .lower-main-block
+    width: 90%
+  nav .justify-content-between
+    justify-content: flex-start !important
+    div
+      margin: 5px
+
+@media all and (max-width: 1490px)
+  .yellow-rotated
+    display: none
+  .lower_main
+    justify-content: center
+
+
+@media all and (max-width: 1384px)
+  .sort_separated
+    margin-right: 20px
+    label
+      font-size: 17px
+      color: #fff
+      line-height: 1
+
+  .filter_panel
+    width: 240px
+  .sort_action
+    width: calc(100% - 240px)
+
+
+@media all and (max-width: 1170px)
+  .sort_separated
+    width: calc(50% - 20px)
+    .input-main
+      width: 100%
+      .input_cnt
+        width: 100%
+
+  .sort_separated.switcher
+    display: flex
+    align-items: center
+    margin-top: 10px
+    label
+      margin-bottom: 0
+      margin-right: 20px
+      font-size: 14px
+
+  .white_bar
+    width: 63px
+    height: 28px
+    .grey_round
+      width: 24px
+      height: 24px
+    .grey_round.clicked
+      left: calc(100% - 26px)
+
+
+
+@media all and (max-width: 768px)
+  .catal_section_title
+    padding: 29px 0 23px
+
+  #character-main.active:after
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0,0,0,.6)
+    z-index: 99
+
+  #character-main.active
+    position: static
+    .filter
+      right: 8px
+      z-index: 999
+      top: 10px
+
+  .filter_mob_action
+    width: 100%
+    height: 50px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0 29px 0 21px
+    border-radius: 10px 10px 0 0
+    border: 1px solid #A3BFDF
+    background-color: white
+    z-index: 99
+    left: 0
+    h2
+      font-size: 18px
+      line-height: 21px
+      margin-bottom: 0
+
+  .first_range
+    border-top-left-radius: 0
+    border-top-right-radius: 0
+
+@media all and (max-width: 480px)
+  .mobile-select p:after
+    display: none
+  .mobile-select, .blue-sorting-bottom p
+    font-size: 13px
+    line-height: 1
+
+  .mobile-select svg
+    width: 11px
+    height: 9px
+
+  #pageHtml .solo_btn svg
+    display: none
+
+  .boat_group figure
+    display: none
+
+  .boat_group figure:first-child
+    display: block
+    width: 50%
+
+  .mobile-lower-bottom
+    display: block
+  .boat_group
+    figure:nth-child(1)
+      padding-right: 5px
+    figure:nth-child(2)
+      padding-left: 5px
+
+
+
+  .boat_group figure:nth-child(2)
+    display: block
+    width: 50%
+
+  .help-right-content
+    padding: 20px 0
+
+  .upper-title
+    font-size: 20px
+    line-height: normal
+    font-weight: 600
+
+  .boat_title
+    font-size: 18px
+    line-height: 20px
+
+  .btn-floating.btn-secondary
+    padding-top: 23px
+
+  .form-top
+    display: block
+
+  .form-input
+    margin: 15px 0
+
+
+  .lower-mobile-content
+    display: block
+
+  .form-top
+    input::placeholder
+      font-size: 16px
+    input::placeholder :-ms-input-placeholder
+      font-size: 16px
+    input::placeholder ::-ms-input-placeholder
+      font-size: 16px
+
+  .lower-mobile
+    background: #fff
+
+  .lower-mobile-title
+    display: block
+
+  .lower_main-left
+    display: block
+    padding: 0 20px
+    h3
+      display: none
+
+  .lower_main-left video
+    min-height: auto
+    margin-bottom: 0
+    margin-top: 0
+    border-radius: 8px
+
+  .blue-bg
+    margin-bottom: 30px
+
+  .riviera
+    max-width: 107px
+    max-height: 129px
+
+  .mobile-lower-text
+    margin: 25px 0
+    font-size: 16px
+
+  .main-lower-text, .lower-min-title
+    display: none
+
+  .blue_separated
+    width: 100%
+
+
+
+  .lower-mobile
+    padding: 0 20px
+
+  .rivera-mobile-content
+    display: none
+    font-family: $ui
+
+  .help_main-btn
+    width: 100%
+
+  .mobile-help-right
+    display: none
+
+  .button--fill_btn_yellow
+    max-width: unset
+    width: 100%
+    height: 50px
+    font-size: 16px
+    text-align: center
+
+  .help_main
+    width: 90%
+    border-radius: 20px
+    margin: 0 auto
+
+.boat_group
+  width: 100%
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+
+
+.owl-item_slider
+  width: 33.333333333%
+
+.controls-top
+  width: 100%
+
+.controls-top .btn-secondary
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  z-index: 9
+
+.btn-secondary[data-slide="next"]
+  right: 0
+
+
+.form-input input
+  width: 100%
+  max-width: none
+
+#pageHtml .element_grid.flat .element_grid__el .prod_preview .action_buttons
+  display: none
+
+
+@media all and (max-width: 380px)
+  .chosen_section_title
+    margin-top: 0
+  .blue_separated
+    width: 100%
+  .riviera
+    max-width: 95px
+    max-height: 120px
+  #footer .footer-mobile__first_section
+    display: block
+  #footer .footer-mobile__first_section .site_map_link
+    display: block
+    margin-top: 20px
+    float: none
+  .subs_input_block input::placeholder
+    font-size: 11px
+  .subs_input_block input::placeholder :-ms-input-placeholder
+    font-size: 11px
+  .subs_input_block input::placeholder ::-ms-input-placeholder
+    font-size: 11px
+  #footer .footer-mobile__company_info_section .footer-mobile__footer_subscribe .subs_input_block .btn
+    padding: 8px 8px
+  .filter
+    width: 280px
+
+.footer .big_footer .footer_subs .subs_input_block .subs_btn
+  text-transform: uppercase
+  font-weight: 600
+
+.form-control::placeholder
+  color: #000
+.form-control::placeholder :-ms-input-placeholder
+    color: #000
+.form-control::placeholder ::-ms-input-placeholder
+    color: #000
+
+button:not(:disabled)
+  outline: none
+
+@media (max-width: 800px)
+  .prod_info
+    .tween_btns
+      button
+        min-width: 130px
+
+
+@media (max-width: 320px)
+  .prod_info
+    .tween_btns
+      button
+        min-width: auto
+
+
+
+
+//.chosen-block
+//  overflow: visible !important
+//  overflow-x: hidden !important
+
+
+#filterSlider form
+  border: 1px solid #A3BFDF
+  border-radius: 10px
+
+
+body.active .element_grid.flat .element_grid__el
+  width: 100%
+  transition: all .3s ease-in-out
+
+
+@media all and (min-width: 1220px)
+  body:not(.active) .element_grid.flat .element_grid__el
+    width: calc(100% - 380px)

@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'Montserrat Medium';
+    src: url('../fonts/Montserrat/Montserrat-Medium.eot');
+    src: url('../fonts/Montserrat/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat/Montserrat-Medium.woff') format('woff'),
+        url('../fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url('../fonts/Montserrat/Montserrat-Regular.eot');
+    src: url('../fonts/Montserrat/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat/Montserrat-Regular.woff') format('woff'),
+        url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Semibold';
+    src: url('../fonts/Montserrat/Montserrat-SemiBold.eot');
+    src: url('../fonts/Montserrat/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Montserrat/Montserrat-SemiBold.woff') format('woff'),
+        url('../fonts/Montserrat/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin Montserrat-Medium {
+    font-family: 'Montserrat Medium', sans-serif;
+}
+@mixin Montserrat-Regular {
+    font-family: 'Montserrat Regular', sans-serif;
+}
+@mixin Montserrat-SemiBold {
+    font-family: 'Montserrat Semibold', sans-serif;
+}
+
+.Montserrat-Medium {
+    font-family: 'Montserrat Medium', sans-serif;
+}
+.Montserrat-Regular {
+    font-family: 'Montserrat Regular', sans-serif;
+}
+.Montserrat-SemiBold {
+    font-family: 'Montserrat Semibold', sans-serif;
+}
+
+@font-face {
+    font-family: 'SF UI Display Light';
+    src: url('../fonts/SF-UI-DISPLAY/SFUIDisplay-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Display Regular';
+    src: url('../fonts/SF-UI-DISPLAY/SFUIDisplay-Regular.eot');
+    src: url('../fonts/SF-UI-DISPLAY/SFUIDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SF-UI-DISPLAY/SFUIDisplay-Regular.woff') format('woff'),
+        url('../fonts/SF-UI-DISPLAY/SFUIDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Display Medium';
+    src: url('../fonts/SF-UI-DISPLAY/SFUIDisplay-Medium.eot');
+    src: url('../fonts/SF-UI-DISPLAY/SFUIDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SF-UI-DISPLAY/SFUIDisplay-Medium.woff') format('woff'),
+        url('../fonts/SF-UI-DISPLAY/SFUIDisplay-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Display SemiBold';
+    src: url('../fonts/SF-UI-DISPLAY/SFUIDisplay-Semibold.eot');
+    src: url('../fonts/SF-UI-DISPLAY/SFUIDisplay-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SF-UI-DISPLAY/SFUIDisplay-Semibold.woff') format('woff'),
+        url('../fonts/SF-UI-DISPLAY/SFUIDisplay-Semibold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Display Bold';
+    src: url('../fonts/SF-UI-DISPLAY/SFUIDisplay-Bold.eot');
+    src: url('../fonts/SF-UI-DISPLAY/SFUIDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SF-UI-DISPLAY/SFUIDisplay-Bold.woff') format('woff'),
+        url('../fonts/SF-UI-DISPLAY/SFUIDisplay-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin SF-UI-Display-Light {
+    font-family: 'SF UI Display Light', sans-serif;
+}
+
+@mixin SF-UI-Display-Regular {
+    font-family: 'SF UI Display Regular', sans-serif;
+}
+
+@mixin SF-UI-Display-Medium {
+    font-family: 'SF UI Display Medium', sans-serif;
+}
+
+@mixin SF-UI-Display-Semibold {
+    font-family: 'SF UI Display SemiBold', sans-serif;
+}
+
+@mixin SF-UI-Display-Bold {
+    font-family: 'SF UI Display Bold', sans-serif;
+}

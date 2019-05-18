@@ -1,0 +1,287 @@
+
+.header-top
+    background: linear-gradient(252.01deg, #1562D4 -49.95%, #8823BC 165.6%), #54C1FF
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    color: $color-white
+    & a
+        color: $color-white
+
+    .logo-only-mlaptop
+        margin-right: 10px
+        display: none
+
+    &-menu a
+        line-height: 94px
+        padding: 0rem 1rem
+    &-menu a:hover, &-menu a.active
+        background: #775CEC
+    
+    &-description p
+        margin-bottom: 0
+        &-title
+            line-height: normal
+            letter-spacing: 0.01em
+            font-family: 'SF UI Display Bold', sans-serif
+        &-text
+    &-consultation
+        .header-top-phone
+            svg
+                position: relative
+                left: -5px
+                top: -1px
+            a
+                font-family: 'SF UI Display SemiBold', sans-serif
+                text-decoration: none
+                font-size: 16px
+
+        .free-consultation
+            text-decoration: underline
+            font-size: 12px
+            color: #FFD84F
+
+    &-auth
+        .choose-region-city
+            a
+                color: #FFD84F
+
+    &-action
+        display: flex
+
+        .icn-action
+            float: left
+            margin: 0 12px
+            display: block
+            font-size: 11px
+            color: #727272
+            letter-spacing: .04em
+            text-decoration: none
+            position: relative
+
+            &.icn-action-wishlist
+                svg path
+                    stroke: #FFFFFF
+                    fill: transparent
+                    stroke-width: 1.5px
+                &:hover
+                    svg path
+                        stroke: #EB5757
+                        fill: transparent
+                &:focus
+                    svg path
+                        stroke: #E57E71
+                        fill: #E57E71
+                &.active_wishlist
+                    svg path
+                        stroke: #D75A4A
+                        fill: #D75A4A
+
+            &.icn-action-compare
+                svg path
+                    fill: #FFFFFF
+                &:hover
+                    svg path
+                        fill: #FFE03F
+                &:focus
+                    svg path
+                        fill: #EBD292
+                &.active_compare
+                    svg path
+                        fill: #FFB802
+
+            &.icn-action-cart
+                svg path
+                    fill: #FFFFFF
+                &:hover
+                    svg path
+                        fill: #EB5757
+                &:focus
+                    svg path
+                        fill: #E57E71
+                &.active_cart
+                    svg path
+                        fill: #D75A4A
+
+                .ico
+                    height: auto
+                    display: flex
+                    width: fit-content
+                    margin: 0 auto 0px
+                    justify-content: center
+
+        .icn-action-count
+            position: absolute
+            border-radius: 50%
+            height: 18px
+            width: 18px
+            line-height: 18px
+            overflow: hidden
+            font-size: 11px
+            font-style: normal
+            background: #FF7474
+            color: #FFFFFF
+            top: -8px
+            right: 55%
+            margin-right: -25px
+            text-align: center
+
+.header-content-section
+    background: rgba(80, 152, 236, 0.12)
+
+    &-block
+        padding: 38px 0
+        .width-100
+            width: 100%
+        &-logo
+            display: none
+
+        &-menu
+            .nav
+                justify-content: space-around
+            ul li a
+                padding: .5rem .6rem
+                color: $color-black
+                font-size: 20px
+                &:hover
+                    color: #F9C300
+                &.active
+                    color: #F9C300
+        .form-inline
+            .form-control
+                margin-right: 0
+            .btn
+                position: absolute
+                top: 0
+                right: 0
+                background: url(../img/search.svg) no-repeat center #FFD84F
+                border-radius: 10px
+                padding: 0px
+                height: 50px
+                width: 74px
+        &-actions
+            align-items: center
+            display: -webkit-box
+            display: -ms-flexbox
+            display: flex
+        &-action
+            text-align: center
+            flex-wrap: wrap
+
+            .icn-action
+                float: left
+                margin: 0 0 0 25px
+                display: block
+                font-size: 11px
+                color: #727272
+                letter-spacing: .04em
+                text-decoration: none
+                position: relative
+
+                &.icn-action-wishlist
+                    svg path
+                        stroke: #353535
+                        fill: transparent
+                        stroke-width: 2px
+                    &:hover
+                        svg path
+                            stroke: #EB5757
+                    &:focus
+                        svg path
+                            stroke: #E57E71
+                            fill: #E57E71
+                    &.active_wishlist
+                        svg path
+                            stroke: #D75A4A
+                            fill: #D75A4A
+
+                &.icn-action-compare
+                    svg path
+                        fill: #353535
+                        opacity: .8
+                    &:hover
+                        svg path
+                            fill: #FFE03F
+                    &:focus
+                        svg path
+                            fill: #EBD292
+                    &.active_compare
+                        svg path
+                            fill: #FFB802
+
+                &.icn-action-cart
+                    svg path
+                        fill: #353535
+                        opacity: .8
+                    &:hover
+                        svg path
+                            fill: #EB5757
+                    &:focus
+                        svg path
+                            fill: #E57E71
+                    &.active_cart
+                        svg path
+                            fill: #D75A4A
+
+                .ico
+                    height: 24px
+                    display: flex
+                    width: fit-content
+                    margin: 0 auto 10px
+                    justify-content: center
+
+                p
+                    line-height: 13px
+                    margin-top: 10px
+                    margin-bottom: 0
+
+            .icn-action-count
+                position: absolute
+                border-radius: 50%
+                height: 21px
+                width: 21px
+                line-height: 21px
+                overflow: hidden
+                font-size: 14px
+                font-style: normal
+                background: #FF7474
+                color: #FFFFFF
+                top: -12px
+                right: 46%
+                margin-right: -25px
+                text-align: center
+            
+            .icn-action-wishlist .icn-action-count
+                top: -10px
+
+            .icn-action-compare .icn-action-count
+                top: -10px
+        
+        &-action:first-child
+            .icn-action
+                margin: 0 0 0 0
+    &-mainmenu
+        padding-bottom: 33px
+        width: 100%
+        nav
+            .slick-list
+                width: 100%
+                .slick-slide
+                    margin: 0 6px 0 8px
+                    &:first-child
+                        margin-left: 0
+                    &:last-child
+                        margin-right: 0
+            .nav-item
+                a
+                    height: 47px
+                    align-items: center
+                    color: $color-black
+                    background: #FFF09F
+                    border-radius: 10px
+                    display: inline-flex
+                    padding: 0px 14px 0px 14px
+                    .icn
+                        margin-right: 10px
+                a.active
+                    background: #FFE142
+                a:hover
+                    background: #FFE142

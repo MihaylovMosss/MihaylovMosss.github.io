@@ -1,0 +1,369 @@
+@import "variables/variables"
+@import 'fonts'
+$color-white: #FFFFFF    
+@import 'bx-breadcrumb'
+@import 'single-product__gallery'
+
+.single-product
+    &__title
+        h1
+            font-family: $ui
+            letter-spacing: -0.02em
+            font-size: 33px
+    &__description
+        margin-bottom: 78px
+        margin-top: 51px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        &_excerpt
+            &_block
+                width: 100%
+                display: flex
+                align-items: center
+                margin-bottom: 10px
+                justify-content: space-between
+                h2
+                    font-family: 'SF UI Display Bold', sans-serif
+                    display: inline-block
+                    margin-bottom: 0px
+                    line-height: 28px
+                    color: #242424
+                    font-size: 28px
+                &_stock
+                    background: rgba(55, 69, 97, 0.05)
+                    padding: 2px 6px 2px 8px
+                    border-radius: 17px
+                    span
+                        font-family: $ui
+                        line-height: 18px
+                        font-size: 14px
+                        color: #6E6E6E
+                    .count
+                        font-family: 'SF UI Display Bold', sans-serif
+                &_star
+                    a
+                        font-family: 'SF UI Display Light', sans-serif
+                        text-decoration: underline
+                        font-size: 12px
+                        line-height: 14px
+                        margin-left: 10px
+                        margin-right: 50px
+                        color: #6C6C6C
+                        &:hover
+                            color: #FFCC64
+                .compare_product
+                    border: 2px solid #FEDC64
+                    text-transform: uppercase
+                    padding: 10px 24px 10px
+                    letter-spacing: 0.03em
+                    border-radius: 10px
+                    text-align: center
+                    font-size: 11px
+                    cursor: pointer
+                    color: #202020
+                    &:hover
+                        background-color: #FFCC44
+                .icn-action-wishlist
+                    margin-left: 0
+                    align-items: center
+                    display: flex
+                    i.ico
+                        margin-bottom: 0
+                        margin-right: 14px
+                    i.icn-action-count
+                        right: 64%
+            .desc
+                margin-top: 10px
+                p
+                    line-height: 20px
+                    font-size: 15px
+                    color: #3F3F3F
+            .single-product__properties_all
+                justify-content: flex-end
+                margin-top: 15px
+                display: flex
+                width: 100%
+                a
+                    border-bottom: 1px solid #008AD8
+                    padding-bottom: 1px
+                    line-height: 20px
+                    text-align: right
+                    font-size: 15px
+                    color: #008AD8
+            .single-product__offers
+                .variation
+                    margin-bottom: 20px
+
+                .variation-current
+                    display: none
+
+                .variation-color .nradio input:not(:checked)+span
+                    font-size: 0
+
+                .variation-color .nradio input:checked+span:after
+                    content: ""
+                    display: block !important
+                    position: absolute
+                    top: -5px
+                    bottom: -5px
+                    right: -5px
+                    left: -5px
+                    z-index: -1
+
+                .variation-color .nradio
+                    margin-right: 5px
+                    margin-top: 0
+
+                .radio_color input
+                    display: none
+
+                .radio_color
+                    position: relative
+                    border: 2px solid #CECECE
+                    border-radius: 10px
+                    display: inline-block
+                    vertical-align: top
+                    cursor: pointer
+
+                .radio_color+.radio_color
+                    margin-left: 5px
+
+                .radio_color:hover
+                    border: 2px solid #FFD84F
+
+                .radio_color>span
+                    border-radius: 10px
+                    display: inline-block
+                    vertical-align: middle
+                    padding: 3px 5px 4px
+
+                .radio_color>span>i
+                    width: 30px
+                    height: 20px
+                    vertical-align: middle
+                    display: inline-block
+
+                .radio_color>span>i img
+                    display: block
+
+                .radio_color>span>span
+                    display: none
+                    vertical-align: middle
+                    padding-left: 10px
+                    padding-right: 10px
+
+                .radio_color input:checked+span
+                    background: #f2f5f7
+
+                .radio_color input:checked+span>span
+                    display: inline-block
+
+        &_right_section
+            padding-right: 0
+            .single-product__price
+                text-align: center
+                background: #557AFF
+                border-radius: 12px
+                padding: 32px 36px 36px 36px
+                &_old
+                    font-family: $ui
+                    color: rgba(255, 255, 255, 0.62)
+                    text-decoration: line-through
+                    line-height: 23px
+                    font-size: 19px
+                &_new
+                    font-family: 'SF UI Display Bold', sans-serif
+                    line-height: 43px
+                    margin-top: 10px
+                    font-size: 36px
+                    color: #FFFFFF
+                .in_credit
+                    font-family: 'SF UI Display Semibold', sans-serif
+                    border-bottom: 1px solid #FFF73F
+                    padding-bottom: 3px
+                    margin-bottom: 33px
+                    position: relative
+                    line-height: 19px
+                    margin-top: 15px
+                    font-size: 14px
+                    color: #FFF73F
+                    i
+                        background-image: url(../img/in_credit_tooltip.svg)
+                        position: absolute
+                        height: 14px
+                        width: 14px
+                        left: -20px
+                        top: 3px
+                    span
+                        font-size: 17px
+                .btn_product_buy
+                    color: #101010
+                    font-size: 13px
+                    line-height: 16px
+                    letter-spacing: 0.03em
+                    padding: 16px 29px 13px
+                    text-transform: uppercase
+                    background-color: #FFF73F
+                    &:hover
+                        background-color: #FFE600
+                    &:active
+                        background-color: #FFD53F
+            .single-product__delivery_buy_section
+                margin-top: 18px
+                padding: 22px 25px
+                background: #F9F9F9
+                border-radius: 10px
+                border: 1px solid #C2C2C2
+                h2
+                    font-family: 'SF UI Display Bold', sans-serif
+                    margin-bottom: 20px
+                    font-size: 28px
+                    color: #242424
+                .single-product__delivery_list
+                    margin-bottom: 50px
+                    .single-product__delivery_list_item
+                        justify-content: space-between
+                        position: relative
+                        font-size: 15px
+                        color: #7C7C7C
+                        display: flex
+                        &::before
+                            content: ''
+                            position: absolute
+                            border: 1px dotted #7C7C7C
+                            width: 100%
+                            bottom: 6px
+                        &_label
+                            font-family: $ui
+                            background-color: #F9F9F9
+                            position: relative
+                        &_value
+                            font-family: 'SF UI Display Medium', sans-serif
+                            background-color: #F9F9F9
+                            position: relative
+                .single-product__buy_list
+                    margin-bottom: 0px
+                    .single-product__buy_list_item
+                        justify-content: space-between
+                        position: relative
+                        font-size: 15px
+                        color: #7C7C7C
+                        display: flex
+                        &::before
+                            content: ''
+                            position: absolute
+                            border: 1px dotted #7C7C7C
+                            width: 100%
+                            bottom: 6px
+                        &_label
+                            font-family: $ui
+                            background-color: #F9F9F9
+                            position: relative
+                        &_value
+                            font-family: 'SF UI Display Medium', sans-serif
+                            background-color: #F9F9F9
+                            position: relative
+    &__video_section
+        background: linear-gradient(235.99deg, #005FED -60.74%, rgba(117, 205, 255, 0.78) 156.02%)
+        padding: 82px 0 70px
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            background-image: url(../img/videoblock-Left.png)
+            height: 556px
+            width: 420px
+            left: 0
+            top: 0
+        &::after
+            content: ''
+            position: absolute
+            background-image: url(../img/videoblock-Right_Bottom.png)
+            height: 623px
+            width: 377px
+            right: 0
+            bottom: 0
+        h2
+            text-transform: uppercase
+            margin-bottom: 17px
+        p
+            font-family: $ui
+            margin-bottom: 40px
+            font-size: 22px
+        .video
+            border: 2px solid #FFFFFF
+            display: inline-block
+            border-radius: 20px
+            max-width: 980px
+            width: 63%
+            iframe
+                border-radius: 23px
+                width: 100%
+                padding: 15px
+        h3
+            margin-top: 40px
+            font-size: 22px
+        p
+            font-size: 18px
+    &__description_block
+        padding: 45px 0 65px
+        .nav.nav-pills
+            width: 100%
+            justify-content: space-between
+            .nav-item
+                margin-right: 5px
+                .nav-link
+                    +SF-UI-Display-Regular
+                    border: 2px solid #A3BFDF
+                    padding: 13px 24px 12px
+                    border-radius: 10px
+                    line-height: 23px
+                    font-size: 18px
+                    color: #98B0CB
+                    &.active
+                        background-color: transparent
+                        border: 2px solid #F9C300
+                        border-radius: 10px
+                        color: #202020
+                &:last-child
+                    margin-right: 0
+        .tab-content
+            width: 100%
+            .tab-pane
+                border: 1px solid #A3BFDF
+                border-radius: 10px
+                padding: 37px 41px
+                h2
+                    +SF-UI-Display-Medium
+                    margin-bottom: 28px
+                    line-height: 37px
+                    font-size: 28px
+                    color: #242424
+            #pills-testimonials
+                padding: 37px 0
+                h2
+                    padding: 0 41px
+                .comments
+    &__advanced
+        background: linear-gradient(253.89deg, rgba(117, 180, 255, 0.15) 3.79%, rgba(117, 180, 255, 0.0975) 119%)
+        padding: 90px 0 100px
+        &_text
+            h2
+                color: #1D1D1D
+                font-size: 35px
+                letter-spacing: -0.02em
+            p
+                color: #1D1D1D
+                font-size: 18px
+                line-height: 30px
+
+
+
+@import 'single-product__properties'
+@import 'single-product__crossell_block'
+@import 'single-product__feauters_block'
+@import 'single-product__testimonials'
+@import 'single-product__question_form'
+
+@import 'single-product__media'

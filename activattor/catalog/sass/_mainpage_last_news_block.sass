@@ -1,0 +1,74 @@
+.last-news-block
+    overflow: hidden
+    position: relative
+    padding: 89px 0 61px
+    background: rgba(255, 247, 242, 0.5)
+    &:before
+        position: absolute
+        content: ''
+        height: 350px
+        width: 296px
+        left: -0%
+        top: -0%
+        background: url(../img/news-main-block-desktop-left.png) no-repeat
+        z-index: -1
+    &:after
+        position: absolute
+        content: ''
+        height: 425px
+        width: 267px
+        right: 0%
+        bottom: -0%
+        background: url(../img/news-main-block-desktop-right.png) no-repeat
+        z-index: -1
+    .news-list-main
+        margin: 51px 0px 49px
+        display: flex
+        flex-wrap: wrap
+        .news-item
+            margin: 0 0px
+            &-content
+                position: relative
+                border-radius: 12px
+                background: #ffffff
+                border: 2px solid rgba(226, 226, 226, 0.5)
+                &:hover
+                    border: 2px solid #FFE03F
+                a
+                    display: block
+                    img
+                        width: 100%
+                        height: auto
+                .inform
+                    padding: 27px 33px
+                    .date
+                        color: #202020
+                        font-size: 12px
+                        margin-bottom: 16px
+                        +SF-UI-Display-Regular
+                        span:last-child
+                            margin-left: 20px
+                    a
+                        color: #000000
+                        font-size: 16px
+                        line-height: 17px
+                        margin-bottom: 15px
+                    p
+                        color: #202020
+                        font-size: 14px
+                        line-height: 19px
+                        +SF-UI-Display-Regular
+                &-action-block
+                    align-items: center
+                    width: 100%
+                    .item
+                        display: flex
+                        flex-wrap: wrap
+                        margin-right: 30px
+                        align-items: center
+                        img
+                            margin-right: 5px
+                        span
+                            +SF-UI-Display-Regular
+                            font-size: 10px
+                            color: #202020

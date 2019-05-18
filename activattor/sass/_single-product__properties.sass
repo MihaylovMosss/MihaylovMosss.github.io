@@ -1,0 +1,41 @@
+.single-product__properties
+    display: block
+    width: 100%
+    .attribute_row
+        display: flex
+        position: relative
+        justify-content: space-between
+        &::before
+            content: ''
+            position: absolute
+            bottom: 5px
+            left: 0
+            right: 0
+            height: 0
+            line-height: 0
+            border-bottom: 1px dashed #7C7C7C
+        .attribute-label
+            font-size: 15px
+            line-height: 25px
+            color: #7C7C7C
+            position: relative
+            background: #FFFFFF
+            i
+                background-image: url(../img/product_properties_attribute_tooltip.svg)
+                background-size: cover
+                display: inline-block
+                position: relative
+                margin-bottom: 5px
+                margin-right: 5px
+                cursor: pointer
+                height: 16px
+                width: 15px
+                top: 5px
+                &:hover
+
+        .attribute-value
+            color: #000000
+            font-size: 15px
+            line-height: 25px
+            position: relative
+            background: #FFFFFF

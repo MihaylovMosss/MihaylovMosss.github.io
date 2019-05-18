@@ -1,0 +1,52 @@
+@import variables/variables
+@import 'fonts'
+
+$color-white: #FFFFFF
+$color-black: #000000
+
+.color-white
+    color: $color-white
+
+a
+    transition: all .8s
+
+a:focus
+    outline: 0
+
+body
+    +SF-UI-Display-Medium
+    font-size: 14px
+
+    h1, h2, h3, h4, h5, h6
+        +Montserrat-Medium
+
+    input, textarea
+        border: 0
+        outline: 0
+        padding: 0 20px
+        border-radius: 8px
+        line-height: 40px
+        margin-right: 15px
+        background: #FFFFFF
+        box-shadow: inset 0px 0px 11px rgba(0, 0, 0, 0.07)
+
+
+
+@import 'ui-kit'
+@import 'bootstrap-slider'
+@import 'header'
+@import 'footer'
+@import 'mainpage_slider_block'
+@import 'mainpage_quickView_block'
+@import 'mainpage_feauters_block'
+@import 'mainpage_top_product_block'
+@import 'main_consultation_block'
+@import 'maintext_block'
+@import 'mainpage_client_block'
+@import 'mainpage_last_news_block'
+@import 'chosenpage__styles'
+
+
+@import "ui/ui"
+@import "ui/ui-2"
+

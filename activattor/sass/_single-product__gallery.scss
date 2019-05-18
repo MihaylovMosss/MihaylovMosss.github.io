@@ -1,0 +1,119 @@
+/* START MODULE STYLING */
+.module-gallery {
+	width: 100%;
+}
+.module-gallery .slider-wrapper {
+	display: flex;
+	height: 630px;
+}
+.module-gallery .slider-thumb {
+	margin-bottom: 0;
+	padding-left: 0px;
+	max-width: 62px;
+	list-style: none;
+}
+
+.module-gallery .slider-thumb .slick-list {
+	margin: 40px 0 0;
+}
+.module-gallery .slider-thumb li {
+	border: 2px solid #A3BFDF;
+	justify-content: center;
+	border-radius: 10px;
+	margin-bottom: 11px;
+	overflow: hidden;
+	cursor: pointer;
+	display: flex !important;
+	height: 82px;
+	width: 60px !important;
+}
+.module-gallery .slider-thumb li:hover,
+.module-gallery .slider-thumb .slick-current li {
+	border: 2px solid #F9C300;
+}
+.module-gallery .slider-thumb li img {
+	width: auto;
+	height: 100%;
+}
+.module-gallery .slider-thumb .slick-prev,
+.module-gallery .slider-thumb .slick-next {
+	z-index: 1;
+	height: 1em;
+	width: 100%;
+	background-color: #000000;
+	opacity: 0.3;
+	transition: opacity 300ms ease;
+	font-size: 1.5em;
+	color: #FFFFFF;
+}
+.module-gallery .slider-thumb .slick-prev:before,
+.module-gallery .slider-thumb .slick-next:before {
+	content: '';
+}
+.module-gallery .slider-thumb .slick-prev:hover,
+.module-gallery .slider-thumb .slick-next:hover {
+	opacity: 0.5;
+}
+.module-gallery .slider-thumb .slick-prev {
+	left: unset;
+	top: 0.5em;
+}
+.module-gallery .slider-thumb .slick-next {
+	top: unset;
+	right: unset;
+	bottom: -0.5em;
+}
+
+.module-gallery .slider-preview {
+	border: 2px solid #A3BFDF;
+	align-items: center;
+	border-radius: 10px;
+	margin-bottom: 0px;
+	margin-left: 35px;
+	list-style: none;
+	padding-left: 0;
+	display: grid;
+}
+
+.module-gallery .slider-preview .slick-list {
+	height: 100%;
+}
+
+.module-gallery .slider-preview .slick-track {
+	align-items: center;
+}
+
+.module-gallery .slider-preview li img {
+	height: 100%;
+	width: auto;
+}
+
+.slick-track .slick-track { display: none; }
+
+
+@media (max-width: 767px) {
+	.module-gallery .slider-wrapper {
+		flex-direction: column-reverse;
+	}
+	.module-gallery .slider-thumb {
+		max-width: 100%;
+	}
+	.module-gallery .slider-thumb .slick-prev,
+	.module-gallery .slider-thumb .slick-next {
+		top: 50%;
+		width: 1em;
+		height: 100%;
+	}
+	.module-gallery .slider-thumb .slick-prev {
+		left: 0;
+	}
+	.module-gallery .slider-thumb .slick-prev .fa:before {
+		content: "\f104";
+	}
+	.module-gallery .slider-thumb .slick-next {
+		right: 0;
+	}
+	.module-gallery .slider-thumb .slick-next .fa:before {
+		content: "\f105";
+	}
+}

@@ -1,0 +1,550 @@
+/* ui Kit */
+.ui-kit
+  background-color: #E5E5E5
+  button, a, svg
+    cursor: pointer
+// Input Default  Start
+.input-default
+  border: 1px solid rgba(68, 95, 239, 0)
+  transition: all .3s
+  &:hover
+    border: 1px solid rgba(68, 95, 239, 0.37)
+  &:focus
+    border: 1px solid #445FEF
+  &.error
+    color: $color-cinnabar
+    border: 1px solid $color-cinnabar
+    &::placeholder
+      color: $color-cinnabar
+    + span svg.icon
+      stroke: $color-cinnabar
+// Input Default  Finish
+
+// Buttons Start
+
+.button
+  border-radius: 8px
+  font-size: 13px
+  letter-spacing: 0.03em
+  line-height: 13px
+  font-family: 'SF UI Display', sans-serif
+  color: $black
+  height: auto !important
+  padding: 0.844rem
+  font-weight: 600
+  margin: 0 auto
+  max-width: 225px
+  text-align: center
+  &--yellow
+    background-color: $color-golden-fizz
+    transition: .3s ease-in-out
+    color: #303030
+    &:hover
+      background-color: $color-turbo
+    &:active
+      background-color: $color-bright-sun
+      color: #B48D00
+    &:focus
+      background-color: $color-bright-sun
+      color: #B48D00
+
+.button-play
+  transform: translateY(-50%) translateX(-50%)
+  position: relative
+  top: 50%
+  left: 50%
+  background-color: #FFD702
+  width: 44px
+  height: 50%
+  border-radius: 50%
+  display: flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+  border: none
+  padding: 22px
+  box-sizing: border-box
+  transition: .3s ease-in-out
+  svg
+    width: 19px
+    height: 17px
+    position: absolute
+    top: 30%
+    left: 34%
+  &:before
+    content: ""
+    top: 50%
+    left: 50%
+    transform: translateY(-50%) translateX(-50%)
+    position: absolute
+    padding: 24px
+    border: 2px solid rgba(255, 215, 2, 0.35)
+    border-radius: 50%
+  &:after
+    content: ""
+    top: 50%
+    left: 50%
+    transform: translateY(-50%) translateX(-50%)
+    position: absolute
+    padding: 28px
+    border: 2px solid rgba(255, 215, 2, 0.35)
+    border-radius: 50%
+  &:hover
+    background-color: #FFB802
+    &:before
+      border: 2px solid rgba(255, 184, 2, 0.57)
+    &:after
+      border: 2px solid rgba(255, 184, 2, 0.13)
+  &:active
+    outline: none
+    background-color: #FFD569
+
+    &:before
+      border: 2px solid rgba(255, 215, 2, 0.35)
+
+    &:after
+      border: 2px solid rgba(255, 238, 148, 0.35)
+
+  &:focus
+    background-color: #FFD569
+    outline: none
+
+    &:before
+      border: 2px solid rgba(255, 215, 2, 0.35)
+
+    &:after
+      border: 2px solid rgba(255, 238, 148, 0.35)
+
+.slide-button-prev-default
+  background-color: #ffffff
+  border-radius: 50%
+  width: 58px
+  height: 58px
+  transition: .3s ease-in-out
+  border: none
+  padding: 0
+
+  svg
+    fill: $color-lochmara
+
+  &:hover
+    background-color: $color-selective-yellow
+
+    svg
+      fill: #fff
+
+    &:active
+      background-color: #FFE49F
+      outline: none
+
+      svg
+        fill: #fff
+
+    &:focus
+      background-color: #FFE49F
+
+      svg
+        fill: #fff
+
+.slide-button-prev
+  background-color: $color-mustard
+  border-radius: 50%
+  width: 58px
+  height: 58px
+  transition: .3s ease-in-out
+  border: none
+  padding: 0
+
+  svg
+    fill: $white
+
+  &:hover
+    background-color: $color-selective-yellow
+
+  &:active, &:focus
+    outline: none
+    background-color: #FFE49F
+
+.button-heart
+  border: none
+  background: transparent
+  transition: .3s ease-in-out
+
+  svg
+    stroke: #353535
+    fill: transparent
+    stroke-width: 1px
+
+  &--selected
+    svg
+      stroke: transparent
+      fill: #D75A4A
+
+  &:hover
+    svg
+      stroke: #EB5757
+
+  &:active
+    svg
+      stroke: #E57E71
+      fill: #E57E71
+
+  &:focus
+    svg
+      stroke: #E57E71
+      fill: #E57E71
+
+.button-balance
+  border: none
+  background: transparent
+  transition: .3s ease-in-out
+
+  svg
+    stroke: #353535
+    fill: transparent
+    stroke-width: 1px
+
+  &--selected
+    svg
+      stroke: #FFB802
+      fill: transparent
+
+  &:hover
+    svg
+      stroke: #FFE03F
+
+  &:active
+    svg
+      stroke: #EBD292
+
+  &:focus
+    svg
+      stroke: #EBD292
+
+.button-prev
+  border: none
+  height: 43px
+  width: 23px
+  border-radius: 9px
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: rgba(53, 53, 53, 0.25)
+  padding: 0
+  transition: .3s ease-in-out
+
+  &:hover
+    background-color: $color-amber
+
+  &:active
+    background-color: #FCDD6E
+
+  &:focus
+    background-color: #FCDD6E
+
+  svg
+    fill: #FFFFFF
+
+.button-golden-outline
+  font-size: 13px
+  line-height: 16px
+  text-align: center
+  letter-spacing: 0.03em
+  text-transform: uppercase
+  color: #202020
+  border: 2px solid #FEDC64
+  border-radius: 8px
+  background: transparent
+  padding: 0.844rem
+  transition: .3s ease-in-out
+
+  &:hover
+    background: #FFB802
+    border-radius: 8px
+    color: #FFFFFF
+    border-color: #FFB802
+
+  &:active, &:focus
+    background: #FCDD6E
+    border-radius: 6px
+    color: #C39900
+    border-color: #FCDD6E
+
+.button-golden-bg
+  font-size: 13px
+  line-height: 16px
+  text-align: center
+  letter-spacing: 0.03em
+  text-transform: uppercase
+  color: #202020
+  background: #FFE03F
+  border: 1px solid #FFE03F
+  border-radius: 8px
+  padding: 0.844rem
+  transition: .3s ease-in-out
+
+  &:hover
+    background: #FFB802
+    border-radius: 8px
+    color: #FFFFFF
+    border-color: #FFB802
+
+  &:active, &:focus
+    background: #FCDD6E
+    border-radius: 6px
+    color: #C39900
+    border-color: #FCDD6E
+
+.button-blue-bg
+  font-size: 13px
+  line-height: 16px
+  text-align: center
+  letter-spacing: 0.03em
+  text-transform: uppercase
+  color: $white
+  background: $color-lochmara
+  border: 1px solid $color-lochmara
+  border-radius: 8px
+  padding: 0.844rem
+  transition: .3s ease-in-out
+
+  &:hover
+    background: #FFB802
+    border-radius: 8px
+    color: #FFFFFF
+    border-color: #FFB802
+
+  &:active, &:focus
+    background: #FCDD6E
+    border-radius: 6px
+    color: #C39900
+    border-color: #FCDD6E
+
+.button-blue-outline
+  font-size: 13px
+  line-height: 16px
+  text-align: center
+  letter-spacing: 0.03em
+  text-transform: uppercase
+  color: #202020
+  background: transparent
+  border: 1px solid $color-lochmara
+  border-radius: 8px
+  padding: 0.844rem
+  transition: .3s ease-in-out
+
+  &:hover
+    background: #FFB802
+    border-radius: 8px
+    color: #FFFFFF
+    border-color: #FFB802
+
+  &:active, &:focus
+    background: #FCDD6E
+    border-radius: 6px
+    color: #C39900
+    border-color: #FCDD6E
+
+
+.button-bookmark
+  background: transparent
+  border: none
+
+  svg
+    display: block
+
+  & .bookmark_fill
+    display: none
+
+  &-active
+    & .bookmark_fill
+      display: block
+
+  &:active
+    & .bookmark_stroke
+      display: none
+
+    & .bookmark_fill
+      display: block
+
+  &:hover
+    svg
+      stroke: #D34545
+
+
+.button-close
+  background: transparent
+  border: none
+  transition: .3s ease-in-out
+
+  svg
+    stroke: #000000
+
+  &:hover
+    svg
+      stroke: #FFB802
+
+  &:active, &:focus
+    outline: none
+
+    svg
+      stroke: #FCDD6E
+
+
+.button-plus
+  display: block
+  background-color: #0073DC
+  width: 20px
+  height: 20px
+  position: relative
+  border-radius: 6px
+  border: none
+  transition: .3s ease-in-out
+  &:hover
+    background-color: $color-amber
+
+  &:active, &:focus
+    background-color: #FCDD6E
+
+  &:disabled
+    background-color: rgba(0, 115, 220, 0.2)
+    cursor: not-allowed
+
+    &:hover, &:active, &:focus
+      background-color: rgba(0, 115, 220, 0.2)
+
+  span
+    display: block
+    font-size: 20px
+    color: #FFF
+    position: absolute
+    top: .54rem
+    left: 4px
+    line-height: 0
+
+
+// Buttons Finish
+
+
+// links start
+.more
+  text-decoration: underline
+  font-size: 15px
+  line-height: 20px
+  color: $color-lochmara
+  transition: .3s ease-in-out
+  &:hover
+    color: #00B2FF
+    text-decoration: underline
+
+.more-v1
+  color: #202020
+  text-decoration: #FFE03F underline
+
+  &:hover
+    color: $color-amber
+    text-decoration: $color-amber underline
+
+// links finish
+
+.rate_row
+  .star_stat
+    li
+      .hovered-star_stroke
+        fill: $color-cinnabar
+// radio button start
+
+.radio_input
+  display: block
+  position: relative
+  padding-left: 25px
+  margin-bottom: 12px
+  cursor: pointer
+  font-size: 22px
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  transition: .3s ease-in-out
+  input
+    position: absolute
+    opacity: 0
+    cursor: pointer
+    width: 20px
+    height: 20px
+    left: 0
+    &:disabled
+      cursor: not-allowed
+      & ~ .radio-check
+        &:after
+          display: none
+        &:focus, &:hover, &:active
+          border: 2px solid #CCE3F8
+    &:checked ~ .radio-check
+      border: 2px solid #0073DC
+      opacity: unset
+
+      &:after
+        display: block
+        opacity: unset
+  &:hover
+    input ~ .radio-check
+      border-color: #55BAFF
+      &:after
+        display: block
+        top: 3px
+        left: 3px
+        width: 10px
+        height: 10px
+        border-radius: 50%
+        background: #55BAFF
+  &:active, &:focus
+    outline: none
+    input ~ .radio-check
+      border: 2px solid #0073DC
+      opacity: 0.5
+      &:after
+        display: block
+        background: #0073DC
+  &-selected
+    .radio-check
+    border: 2px solid #0073DC
+    &:after
+      display: block
+  &-disabled
+    cursor: not-allowed
+    input ~ .radio-check
+      border-color: #CCE3F8
+      opacity: unset
+    &:hover, &:focus, &:active
+      outline: none
+      input ~ .radio-check
+        border-color: #CCE3F8
+        opacity: unset
+        &:after
+          display: none
+/* custom radio button */
+.radio-check
+  position: absolute
+  top: 0
+  left: 0
+  height: 20px
+  width: 20px
+  border-radius: 50%
+  border: 2px solid rgba(0, 115, 220, 0.5)
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radio-check:after
+  content: ""
+  position: absolute
+  display: none
+/* Style the indicator (dot/circle) */
+.radio_input
+  .radio-check:after
+    top: 3px
+    left: 3px
+    width: 10px
+    height: 10px
+    border-radius: 50%
+    background: #0073DC
+
+// radio button finish

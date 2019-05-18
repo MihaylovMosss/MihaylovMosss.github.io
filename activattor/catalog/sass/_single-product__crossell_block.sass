@@ -1,0 +1,411 @@
+.single-product__crossell_block
+    padding: 90px 0 100px
+    position: relative
+    h2
+        padding: 0 60px
+        font-size: 35px
+        width: 100%
+    p
+        margin-bottom: 40px
+        padding: 0 60px
+        font-size: 18px
+        color: #808080
+    .catalog-top
+        margin: 0 -10px
+        padding: 0 60px
+        position: relative
+        .slick-next
+            right: -75px
+        .slick-prev
+            left: -75px
+
+        .product-item-list .slick-list
+            border-radius: 10px
+
+            .product-item-big-card
+                padding-left: 15px
+                padding-right: 15px
+                .main-top-product-container
+                    position: relative
+                    background-color: #FFFFFF
+                    border: 2px solid #81BADB
+                    border-radius: 10px
+                    padding: 24px
+                    .top-product-item-compare-container
+                        position: absolute
+                        right: 0
+                        top: 14px
+                        margin: 0
+                        z-index: 12
+                        cursor: pointer
+                        font-size: 12px
+                        min-height: 30px
+                        padding: 0px 8px
+                        line-height: 20px
+                        .top-product-item-wishlist
+                            margin-bottom: 10px
+                            svg path
+                                stroke: #353535
+                                stroke-width: 1px
+                                fill: transparent
+                            a:hover
+                                svg path
+                                    stroke: #EB5757
+                            a:focus
+                                svg path
+                                    stroke: #E57E71
+                                    fill: #E57E71
+                            a.active_wishlist
+                                svg path
+                                    stroke: #D75A4A
+                                    fill: #D75A4A
+                    &:hover
+                        border: 2px solid #F9C300
+                    .top-product-item
+                        display: block
+                        box-sizing: border-box
+                        padding-top: 0
+                        width: 100%
+                        border: 0px solid transparent
+                        border-radius: 2px
+                        position: relative
+                        overflow: hidden
+                        &::after
+                            z-index: 5
+                            content: 'Перейти'
+                            font-family: 'SF UI Display Medium', sans-serif
+                            background-image: url('../img/right_icns.svg')
+                            transform: translateY(0px) translateX(60px) scale(1)
+                            background-position: 64px 1px
+                            background-repeat: no-repeat
+                            transition: all .6s
+                            position: absolute
+                            line-height: 16px
+                            font-size: 14px
+                            color: #F9C300
+                            height: 16px
+                            width: 94px
+                            bottom: 8px
+                            opacity: 0
+                            right: 0px
+                            padding: 0
+                        &:hover::after
+                            transform: translateY(0) translateX(0) scale(1)
+                            opacity: 1
+                        /*Image*/
+                        &-image-wrapper
+                            width: 80%
+                            height: 168px
+                            display: block
+                            margin-left: auto
+                            margin-right: auto
+                            position: relative
+                            margin-bottom: 15px
+                            transition: all 300ms ease
+                        .top-product-item-info-container
+                            position: relative
+
+.top-product-item-image-original,
+.top-product-item-image-alternative
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	display: block
+	padding: 0 0%
+	width: 100%
+	height: 100%
+	background-position: center
+	background-size: contain
+	background-repeat: no-repeat
+	transition: opacity 300ms linear
+
+.top-product-item-image-original
+    z-index: 11
+
+.top-product-item-image-alternative
+	z-index: 13
+	opacity: 0
+
+.bx-no-touch .main-top-product-container.hover .top-product-item-image-original
+    opacity: 0
+
+.bx-no-touch .main-top-product-container.hover .top-product-item-image-alternative
+    opacity: 1
+
+.top-product-item-big-card .top-product-item-image-wrapper
+    margin-bottom: 25px
+
+/*Image Slider*/
+.top-product-item-image-slider-slide-container
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	display: block
+	overflow: hidden
+	width: 100%
+	height: 100%
+	transition: opacity 300ms ease
+
+.top-product-item-image-slide
+	position: relative
+	display: none
+	height: 100%
+	background-color: #FFFFFF
+	background-position: center
+	background-size: contain
+	background-repeat: no-repeat
+	transition: .6s ease-in-out left
+
+.catalog-top-header
+	margin: 5px 0
+	padding: 5px 15px
+	border-bottom: 2px solid #D9DEE6
+	color: #000000
+	text-align: left
+	font-weight: bold
+	font-size: 14px
+
+.top-product-item-line-card .top-product-item-compare-container
+	margin: 0
+	border: none
+	background-color: transparent
+	box-shadow: none
+	text-align: center
+
+.top-product-item-line-card .top-product-item-compare-container,
+.main-top-product-container.hover .top-product-item-compare-container
+	display: block
+
+.top-product-item-compare .checkbox
+	margin: 0
+	padding: 0
+
+.top-product-item-scu-item-color
+	position: absolute
+	top: 2px
+	right: 2px
+	bottom: 2px
+	left: 2px
+	background-position: center
+	background-size: contain
+	background-repeat: no-repeat
+
+.catalog-top-slide.not-active
+	display: none
+	opacity: 0
+	-webkit-animation: prevslide 0.9s
+	animation: prevslide 0.9s
+
+.catalog-top-slider-arrow-left,
+.catalog-top-slider-arrow-right
+	position: absolute
+	top: 50%
+	z-index: 910
+	margin-top: -29px
+	width: 36px
+	height: 36px
+	border-radius: 50%
+	background: calc(50% + 1px) center var(--primary) url(images/arrow.svg) no-repeat
+	background-size: 15px auto
+	opacity: 0
+	cursor: pointer
+	transition: 250ms linear all
+
+.bx-touch .catalog-top-slider-arrow-left,
+.bx-touch .catalog-top-slider-arrow-right,
+.catalog-top:hover .catalog-top-slider-arrow-left,
+.catalog-top:hover .catalog-top-slider-arrow-right
+    opacity: .8
+
+.catalog-top:hover .catalog-top-slider-arrow-left:hover,
+.catalog-top:hover .catalog-top-slider-arrow-right:hover
+    opacity: 1
+
+.catalog-top-slider-arrow-left
+	left: 0
+	transform: rotate(180deg)
+
+.catalog-top-slider-arrow-right
+    right: 0
+
+.catalog-top:hover .catalog-top-slider-arrow-left:active,
+.catalog-top:hover .catalog-top-slider-arrow-right:active
+    opacity: .7
+
+.catalog-top-slider-pagination
+	position: absolute
+	bottom: 0
+	margin: 0
+	padding: 0
+	width: 100%
+	list-style: none
+	text-align: center
+
+.catalog-top-slider-pagination li
+	display: inline-block
+	margin: 0 3px
+	width: 14px
+	height: 14px
+	border-radius: 50%
+	background-color: var(--primary)
+	opacity: .3
+	cursor: pointer
+	transition: 250ms linear all
+
+.catalog-top-slider-pagination li:hover,
+.catalog-top-slider-pagination li.active
+    opacity: 1
+
+.top-product-item-big-card .top-product-item,
+.top-product-item-small-card .top-product-item
+
+.top-product-item-line-card .top-product-item
+    border-bottom: 1px solid #DADADA
+
+.bx-touch .top-product-item
+	padding: 15px 0 0
+	width: auto
+	background-color: #FFFFFF
+
+
+.bx-no-touch .main-top-product-container.hover .top-product-item
+	-webkit-animation: top-product-item-hover 300ms 1 ease
+	animation: top-product-item-hover 300ms 1 ease
+
+/*Title*/
+.top-product-item-title
+	margin: 0
+	padding: 0
+	line-height: 16px
+
+.top-product-item-title a
+	font-size: 14px
+	color: #202020
+	line-height: 16px
+	text-decoration: none
+	transition: 250ms linear all
+
+.top-product-item-title a:hover
+	color: #F9C300
+
+.top-product-item-line-card .top-product-item-title
+	white-space: normal
+	text-align: left
+
+.top-product-item-big-card .top-product-item-title a
+    font-size: 21px
+
+.top-product-item-line-card .top-product-item-title a
+    font-size: 20px
+
+@media (max-width: 1199px)
+	.top-product-item-big-card .top-product-item-title a
+        font-size: 18px
+
+@media (max-width: 991px)
+	.top-product-item-big-card .top-product-item-title a
+        font-size: 16px
+
+@media (max-width: 767px)
+	.top-product-item-big-card .top-product-item-title a
+        font-size: 14px
+
+@media (max-width: 575px)
+	.top-product-item-big-card .top-product-item-title a
+        font-size: 16px
+
+/*Price*/
+.top-product-item-price-container
+	margin-top: 40px
+	text-align: left
+	line-height: 2
+
+.top-product-item-price-current
+	font-family: 'SF UI Display Medium', sans-serif
+	font-size: 14px
+	color: #000000
+	line-height: 16px
+	background: rgba(255, 237, 79, 0.5)
+	border-radius: 50px
+	padding: 6px 15px
+
+.top-product-item-price-old
+	color: #A5A5A5
+	text-decoration: line-through
+	white-space: nowrap
+	font-size: 12px
+
+.top-product-item-big-card .top-product-item-price-container
+    margin: 0 0 10px
+
+.top-product-item-big-card .top-product-item-price-current 
+	font-size: 18px
+
+/*Info*/
+.top-product-item-info-container 
+	margin-bottom: 0px
+
+.top-product-item-info-container-title
+	font-size: 12px
+
+/**/
+.top-product-item-quantity 
+	font-size: 12px
+
+/*endregion*/
+
+/*Description*/
+.top-product-item-description-container
+
+.top-product-item-description-container p
+	color: #575757
+	font-size: 13px
+
+/*Buttons*/
+.top-product-item-button-container
+    text-align: center
+
+.top-product-item-button-container .btn
+    margin-bottom: 2px
+
+/*More*/
+.top-product-item-more-container
+	position: relative
+	display: block
+	box-sizing: border-box
+	padding: 15px 15px 5px
+	width: 100%
+	border: 1px solid transparent
+	border-radius: 2px
+	transition: all 300ms ease
+
+.top-product-item-more-wrapper
+	position: relative
+	display: block
+	margin-bottom: 15px
+	padding-top: 116%
+	width: 100%
+
+.top-product-item-more
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	display: block
+	width: 100%
+	height: 100%
+	background: #f3f3f3 url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjk3LjYxMyAyOTcuNjEzIiBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGcgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjxjaXJjbGUgY3g9IjE1LjI3OSIgY3k9IjE0LjgzIiByPSIxNC44MyIgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjU5LjMyIiBjeT0iNTkuNzY5IiByPSIxNC44MyIgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjU5LjMyIiBjeT0iMTQuODMiIHI9IjE0LjgzIiBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTA0LjI2MSIgY3k9IjU5Ljc2OSIgcj0iMTQuODMiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIxMDQuMjYxIiBjeT0iMTAzLjgxIiByPSIxNC44MyIgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEwNC4yNjEiIGN5PSIxNC44MyIgcj0iMTQuODMiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIxNDguMzAyIiBjeT0iNTkuNzY5IiByPSIxNC44MyIgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjE0OC4zMDIiIGN5PSIxMDMuODEiIHI9IjE0LjgzIiBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTQ4LjMwMiIgY3k9IjE0LjgzIiByPSIxNC44MyIgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjE5Mi4zNDMiIGN5PSI1OS43NjkiIHI9IjE0LjgzIiBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTkyLjM0MyIgY3k9IjEwMy44MSIgcj0iMTQuODMiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIxNDguMzAyIiBjeT0iMTQ3Ljg1MiIgcj0iMTQuODMiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIxOTIuMzQzIiBjeT0iMTQ3Ljg1MiIgcj0iMTQuODMiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIxMDQuMjYxIiBjeT0iMTkyLjc5IiByPSIxNC44MzEiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIxNDguMzAyIiBjeT0iMTkyLjc5IiByPSIxNC44MzEiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIxOTIuMzQzIiBjeT0iMTkyLjc5IiByPSIxNC44MzEiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSI1OS4zMiIgY3k9IjIzNi44ODciIHI9IjE0LjgzIiBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTA0LjI2MSIgY3k9IjIzNi44ODciIHI9IjE0LjgzIiBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTQ4LjMwMiIgY3k9IjIzNi44ODciIHI9IjE0LjgzIiBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMTkyLjM0MyIgY3k9IjIzNi44ODciIHI9IjE0LjgzIiBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjM4LjIzOCIgY3k9IjEwMy44MSIgcj0iMTQuODMiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIyMzguMjM4IiBjeT0iMTQ3Ljg1MiIgcj0iMTQuODMiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIyMzguMjM4IiBjeT0iMTkyLjc5IiByPSIxNC44MzEiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIxNS4yNzkiIGN5PSIyODIuNzgyIiByPSIxNC44MzEiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSI1OS4zMiIgY3k9IjI4Mi43ODIiIHI9IjE0LjgzMSIgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEwNC4yNjEiIGN5PSIyODIuNzgyIiByPSIxNC44MzEiIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2NpcmNsZT48Y2lyY2xlIGN4PSIxNDguMzAyIiBjeT0iMjgyLjc4MiIgcj0iMTQuODMxIiBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9jaXJjbGU+PGNpcmNsZSBjeD0iMjgyLjMzNCIgY3k9IjE0Ny44NTIiIHI9IjE0LjgzIiBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9jaXJjbGU+PC9nPjxnIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2c+PGcgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjwvZz48ZyBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9nPjxnIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2c+PGcgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjwvZz48ZyBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9nPjxnIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2c+PGcgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjwvZz48ZyBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9nPjxnIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2c+PGcgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjwvZz48ZyBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9nPjxnIHN0eWxlPSJmaWxsOiByZ2IoMTMwLCAxMzAsIDEzMCk7Ij48L2c+PGcgc3R5bGU9ImZpbGw6IHJnYigxMzAsIDEzMCwgMTMwKTsiPjwvZz48ZyBzdHlsZT0iZmlsbDogcmdiKDEzMCwgMTMwLCAxMzApOyI+PC9nPjwvc3ZnPg==) no-repeat center
+	background-size: 50%
+	opacity: .7
+	transition: opacity 300ms ease
+
+.top-product-item-more-title
+	overflow: hidden
+	text-align: center
+	text-overflow: ellipsis
+	white-space: nowrap
