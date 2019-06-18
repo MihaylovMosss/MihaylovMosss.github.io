@@ -270,10 +270,11 @@
     font-size: 15px;
     line-height: 18px;
     color: #888888;
+
 }
 @media (max-width: 992px) {
   .single-product__cod-tovara-pc{
-    display: none;
+    text-align: left;
   }
 }
 .single-product__description {
@@ -327,6 +328,28 @@
 
 .single-product__description_excerpt_block_stock .count {
   font-family: 'SF UI Display Bold', sans-serif;
+}
+
+.single-product__description_excerpt_block_stock-ipad{
+  display: none;
+  background: rgba(55, 69, 97, 0.05);
+  padding: 2px 6px 2px 8px;
+  border-radius: 17px;
+  position: absolute;
+  width: 160px;
+  top: 20px;
+  left: 110px;
+}
+@media (max-width: 992px) {
+  .single-product__description {
+    margin-top: 20px;
+  }
+  .single-product__description_excerpt_block_stock{
+    display: none;
+  }
+  .single-product__description_excerpt_block_stock-ipad{
+    display: block;
+  }
 }
 
 .single-product__description_excerpt_block_star a {

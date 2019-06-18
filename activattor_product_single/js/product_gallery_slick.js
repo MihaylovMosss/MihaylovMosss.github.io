@@ -41,6 +41,9 @@ $(document).ready(function(){
 		draggable: false,
 		responsive: [
 			{
+				breakpoint: 992
+			},
+			{
 				breakpoint: 767,
 				settings: {
 					vertical: false,
