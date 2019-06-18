@@ -6,21 +6,64 @@
         align-items: center
         margin-bottom: 20px
         justify-content: center
-        &:before
-            content: ''
-            width: 44px
-            height: 44px
-            margin: 2px
-            position: absolute
-            border-radius: 100%
-            background-color: #FFD702
-            background-repeat: no-repeat
-            background-position: 55% 50%
-            background-image: url(../img/video.svg)
-        &:hover:before
-            box-shadow: 0 0 2px rgba(255, 215, 2, 0.35)
         img
             width: 100%
+        .yellow-circle
+            padding-left: 4px
+            transform: translateY(-50%) translateX(-50%)
+            position: absolute
+            top: 50%
+            left: 50%
+            background-color: #FFD702
+            width: 60px
+            height: 60px
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            cursor: pointer
+            transition: all .8s
+            border: none
+            outline: 0
+            svg
+                width: 32px
+                height: 29px
+            &:hover
+                background-color: #FFB802
+
+            &:active,
+            &:focus
+                background-color: #FFD569
+
+            &::before
+                content: ""
+                top: 50%
+                left: 50%
+                transform: translateY(-50%) translateX(-50%)
+                position: absolute
+                width: 76px
+                height: 76px
+                border: 2px solid rgba(255, 215, 2, 0.35)
+                border-radius: 50%
+            &:hover::before
+                border: 2px solid rgba(255, 184, 2, 0.57)
+            &::after
+                transform: translateY(-50%) translateX(-50%)
+                position: absolute
+                content: ""
+                top: 50%
+                left: 50%
+                height: 93px
+                width: 93px
+                border: 2px solid rgba(255, 215, 2, 0.35)
+                border-radius: 50%
+            &:hover::after
+                border: 2px solid rgba(255, 184, 2, 0.13)
+            &:active::before
+                border: 2px solid rgba(255, 215, 2, 0.35)
+            &:active:after
+                border: 2px solid rgba(255, 238, 148, 0.35)
+
     .video-link
         margin-bottom: 5px
         +SF-UI-Display-Medium

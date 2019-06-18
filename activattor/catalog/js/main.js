@@ -345,7 +345,6 @@ $(document).ready(function () {
         } else {
             _parent.toggleClass('active');
         }
-
     });
 
     $(document).on('click', '.filter-mobile:not(".active")', function () {

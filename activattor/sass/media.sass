@@ -39,6 +39,7 @@
             max-width: 13.333333%
     .header-content-section-block-logo
         display: inline-block
+        flex: 1
     .header-content-section-block-menu
         -ms-flex: 0 0 41.666667%
         flex: 0 0 41.666667%
@@ -133,7 +134,6 @@
         -ms-flex-wrap: wrap
         flex-wrap: wrap
         margin-right: -15px
-        margin-left: -20px
         nav
             width: 100%
             .nav
@@ -190,7 +190,7 @@
                 a
                     font-size: 16px
     .top-product-block .catalog-top
-        padding: 0 30px
+        padding: 0 60px
         .product-item-list .slick-list
             margin: 0 
             .product-item-big-card
@@ -199,9 +199,9 @@
             .main-top-product-container
                 padding: 24px 14px
         .slick-prev
-            left: -40px
+            left: -60px
         .slick-next
-            right: -40px
+            right: -60px
 
     .footer-desktop
         display: none
@@ -219,6 +219,7 @@
             justify-content: space-between
             .logo
                 display: flex
+                max-width: 16%
             .social_links
                 display: flex
                 max-width: 18%
@@ -244,8 +245,8 @@
                             &:hover svg path
                                 fill: #FFD84F
             .footer-laptop__footer_subscribe
-                flex: 0 0 32%
-                max-width: 32%
+                flex: 0 0 34%
+                max-width: 36%
                 .footer_heading
                     margin-bottom: 5px
                 p
@@ -453,10 +454,24 @@
             .slick-prev
                 left: 75%
 
+    .quick-view-block .slick-prev
+        left: -28px
+
+    .quick-view-block .nav .slick-list .slick-track .slick-slide a
+        padding: 0 4px
+
     .quick-view-block .tab-content .presets-tiles .presets-tile
         -ms-flex: 0 0 50.0%
         flex: 0 0 50.0%
         max-width: 50.0%
+
+    .quick-view-block .slick-next
+        right: -28px
+
+    .quick-view-block .slick-prev,
+    .quick-view-block .slick-next
+        width: 48px
+        height: 48px
 
     .feauters-block
         .feauter-item
@@ -708,9 +723,9 @@
             padding-left: 40px
             padding-right: 40px
             .slick-prev
-                left: 35px
+                left: 15px
             .slick-next
-                right: 35px
+                right: 15px
 
     .main-consultation-block
         form input
