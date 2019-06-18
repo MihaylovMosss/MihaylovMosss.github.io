@@ -1,15 +1,16 @@
 $(document).ready(function(){
+
 	$('.slider-thumb').slick({
 		autoplay: false,
 		vertical: true,
 		infinite: true,
 		verticalSwiping: true,
-		slidesPerRow: 5,
-		slidesToShow: 5,
+		slidesPerRow: 1,
+		slidesToShow: 6,
 		asNavFor: '.slider-preview',
 		focusOnSelect: true,
-		prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-angle-up"></i></button>',
-		nextArrow: '<button type="button" class="slick-next"><i class="fa fa-angle-down"></i></button>',
+		prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-angle-up slick_corect_market"></i></button>', //
+		nextArrow: '<button type="button" class="slick-next"><i class="fa fa-angle-down"></i></button>', //
 		responsive: [
 			{
 				breakpoint: 767,
@@ -27,7 +28,9 @@ $(document).ready(function(){
 			},
 		]
 	});
-	$('.slider-preview').slick({
+
+	//$('.slider-preview').slick({
+	$(".slider-preview").not('.slick-initialized').slick({
 		autoplay: true,
 		vertical: true,
 		infinite: true,

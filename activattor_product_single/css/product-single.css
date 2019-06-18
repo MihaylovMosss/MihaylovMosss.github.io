@@ -161,12 +161,18 @@
   z-index: 1;
   height: 1em;
   width: 100%;
-  background-color: #000000;
-  opacity: 0.3;
+  background: #F9C300;
+  border-radius: 9px;
+  /* background-color: #000000; */
+  /* opacity: 0.3; */
   -webkit-transition: opacity 300ms ease;
   transition: opacity 300ms ease;
   font-size: 1.5em;
   color: #FFFFFF;
+  background-image: none;
+}
+.slick_corect_market{
+    margin-top: -2px;
 }
 
 .module-gallery .slider-thumb .slick-prev:before,
@@ -258,7 +264,18 @@
   letter-spacing: -0.02em;
   font-size: 33px;
 }
-
+.single-product__cod-tovara-pc{
+    width: 100%;
+    text-align: right;
+    font-size: 15px;
+    line-height: 18px;
+    color: #888888;
+}
+@media (max-width: 992px) {
+  .single-product__cod-tovara-pc{
+    display: none;
+  }
+}
 .single-product__description {
   margin-bottom: 78px;
   margin-top: 51px;
