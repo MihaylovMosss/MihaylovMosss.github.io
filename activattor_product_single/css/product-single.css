@@ -1388,7 +1388,8 @@
 .single-product__delivery_list_item_value,
 .single-product__buy_list_item_value,
 .attribute-value{
-  font-weight: bold;
+  font-family: 'SF UI Display Bold', sans-serif;
+  color: #000;
 }
 
 /* ipad end ########################################################## */
