@@ -1,4 +1,12 @@
 $(document).ready(function(){
+  $(document).on('click', '.checkbox_cnt label', function () {
+    var checkbox_parent = $(this).parent();
+    if($(this).prev('input').attr('type') == 'radio'){
+      checkbox_parent.addClass('active').siblings().removeClass('active');
+    } else {
+      checkbox_parent.toggleClass('active');
+    }
+  });
   $('.slider-block .slider-lists').slick({
     dots: true,
     arrow: false,
@@ -126,14 +134,7 @@ $(document).ready(function(){
       }
     ]
   });
-  $(document).on('click', '.checkbox_cnt label', function () {
-    var checkbox_parent = $(this).parent();
-    if($(this).prev('input').attr('type') == 'radio'){
-      checkbox_parent.addClass('active').siblings().removeClass('active');
-    } else {
-      checkbox_parent.toggleClass('active');
-    }
-  });
+
   $('.client-list').slick({
     dots: false,
     arrow: true,
@@ -253,57 +254,8 @@ $(document).ready(function(){
   $('#footer-informatsiya .footer_heading').on('click', function() {
     $('#footer-informatsiya .footer_nav').toggleClass('active');
   });
-});
-
-// $('.slider-thumb').slick({
-//   autoplay: false,
-//   vertical: true,
-//   infinite: true,
-//   verticalSwiping: true,
-//   slidesPerRow: 1,
-//   slidesToShow: 6,
-//   asNavFor: '.slider-preview',
-//   focusOnSelect: true,
-//   prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-angle-up"></i></button>',
-//   nextArrow: '<button type="button" class="slick-next"><i class="fa fa-angle-down"></i></button>',
-//   responsive: [
-//     {
-//       breakpoint: 767,
-//       settings: {
-//         vertical: false,
-//       }
-//     },
-//     {
-//       breakpoint: 479,
-//       settings: {
-//         vertical: false,
-//         slidesPerRow: 3,
-//         slidesToShow: 3,
-//       }
-//     },
-//   ]
-// });
-// $('.slider-preview').slick({
-//   autoplay: false,
-//   vertical: true,
-//   infinite: true,
-//   slidesPerRow: 1,
-//   slidesToShow: 1,
-//   asNavFor: '.slider-thumb',
-//   arrows: false,
-//   draggable: false,
-//   responsive: [
-//     {
-//       breakpoint: 767,
-//       settings: {
-//         vertical: false,
-//         fade: true,
-//       }
-//     },
-//   ]
-// });
-
-$(".white_bar").on("click", function () {
-    $(".grey_round").toggleClass("clicked");
-    $(".element_grid").toggleClass("flat");
+  $(".white_bar").on("click", function () {
+      $(".grey_round").toggleClass("clicked");
+      $(".element_grid").toggleClass("flat");
+  });
 });

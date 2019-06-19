@@ -221,8 +221,8 @@
 }
 
 .module-gallery .slider-preview li img {
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 100%;
 }
 
 .slick-track .slick-track {
