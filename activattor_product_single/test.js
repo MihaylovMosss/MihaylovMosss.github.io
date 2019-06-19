@@ -6,7 +6,7 @@ $(document).ready(function(){
 		infinite: true,
 		verticalSwiping: true,
 		slidesPerRow: 1,
-		slidesToShow: 6,
+		slidesToShow: 1,
 		asNavFor: '.slider-preview',
 		focusOnSelect: true,
 		prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-angle-up slick_corect_market"></i></button>', //
